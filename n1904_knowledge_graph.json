@@ -1,0 +1,9804 @@
+{
+  "nodes": {
+    "feature::after": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "after",
+      "description": "material after the end of the word",
+      "datatype": "String"
+    },
+    "otype::phrase": {
+      "type": "node_type",
+      "origName": "phrase"
+    },
+    "otype::subphrase": {
+      "type": "node_type",
+      "origName": "subphrase"
+    },
+    "otype::word": {
+      "type": "node_type",
+      "origName": "word"
+    },
+    "feature::appositioncontainer": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase"
+      ],
+      "featureName": "appositioncontainer",
+      "description": "1 if it is an apposition container",
+      "datatype": "Integer"
+    },
+    "otype::clause": {
+      "type": "node_type",
+      "origName": "clause"
+    },
+    "otype::wg": {
+      "type": "node_type",
+      "origName": "wg"
+    },
+    "feature::articular": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::sentence",
+        "otype::group",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase"
+      ],
+      "featureName": "articular",
+      "description": "1 if the sentence, group, clause, phrase or wg has an article",
+      "datatype": "Integer"
+    },
+    "otype::sentence": {
+      "type": "node_type",
+      "origName": "sentence"
+    },
+    "otype::group": {
+      "type": "node_type",
+      "origName": "group"
+    },
+    "feature::before": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "before",
+      "description": "this is XML attribute before",
+      "datatype": "String"
+    },
+    "feature::book": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::book",
+        "otype::chapter",
+        "otype::verse",
+        "otype::sentence",
+        "otype::group",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "book",
+      "description": "book name (full name)",
+      "datatype": "String"
+    },
+    "otype::book": {
+      "type": "node_type",
+      "origName": "book"
+    },
+    "otype::chapter": {
+      "type": "node_type",
+      "origName": "chapter"
+    },
+    "otype::verse": {
+      "type": "node_type",
+      "origName": "verse"
+    },
+    "feature::bookshort": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::book",
+        "otype::sentence",
+        "otype::group",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "bookshort",
+      "description": "book name (abbreviated) from ref attribute in xml",
+      "datatype": "String"
+    },
+    "feature::case": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "case",
+      "description": "grammatical case",
+      "datatype": "String"
+    },
+    "feature::chapter": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::chapter",
+        "otype::verse",
+        "otype::sentence",
+        "otype::group",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "chapter",
+      "description": "chapter number, from ref attribute in xml",
+      "datatype": "Integer"
+    },
+    "feature::clausetype": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::sentence",
+        "otype::clause",
+        "otype::wg"
+      ],
+      "featureName": "clausetype",
+      "description": "clause type",
+      "datatype": "String"
+    },
+    "feature::cls": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::sentence",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "cls",
+      "description": "this is XML attribute cls",
+      "datatype": "String"
+    },
+    "feature::cltype": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::sentence",
+        "otype::clause",
+        "otype::wg"
+      ],
+      "featureName": "cltype",
+      "description": "clause type",
+      "datatype": "String"
+    },
+    "feature::criticalsign": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "criticalsign",
+      "description": "this is XML attribute criticalsign",
+      "datatype": "String"
+    },
+    "feature::crule": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::sentence",
+        "otype::clause",
+        "otype::wg"
+      ],
+      "featureName": "crule",
+      "description": "clause rule (from xml attribute Rule)",
+      "datatype": "String"
+    },
+    "feature::degree": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "degree",
+      "description": "grammatical degree",
+      "datatype": "String"
+    },
+    "feature::discontinuous": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "discontinuous",
+      "description": "1 if the word is out of sequence in the xml",
+      "datatype": "Integer"
+    },
+    "feature::domain": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "domain",
+      "description": "domain",
+      "datatype": "String"
+    },
+    "feature::framespec": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "framespec",
+      "description": "this is XML attribute framespec",
+      "datatype": "String"
+    },
+    "feature::function": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::sentence",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "function",
+      "description": "this is XML attribute function",
+      "datatype": "String"
+    },
+    "feature::gender": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "gender",
+      "description": "grammatical gender",
+      "datatype": "String"
+    },
+    "feature::gloss": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::word"
+      ],
+      "featureName": "gloss",
+      "description": "English gloss (BGVB)",
+      "datatype": "String"
+    },
+    "feature::id": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "id",
+      "description": "xml id",
+      "datatype": "String"
+    },
+    "feature::junction": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase"
+      ],
+      "featureName": "junction",
+      "description": "type of junction",
+      "datatype": "String"
+    },
+    "feature::lang": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::book"
+      ],
+      "featureName": "lang",
+      "description": "language the text is in",
+      "datatype": "String"
+    },
+    "feature::lemma": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "lemma",
+      "description": "lexical lemma",
+      "datatype": "String"
+    },
+    "feature::lemmatranslit": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "lemmatranslit",
+      "description": "transliteration of the word lemma",
+      "datatype": "String"
+    },
+    "feature::ln": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "ln",
+      "description": "ln",
+      "datatype": "String"
+    },
+    "feature::mood": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "mood",
+      "description": "verbal mood",
+      "datatype": "String"
+    },
+    "feature::morph": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "morph",
+      "description": "morphological code",
+      "datatype": "String"
+    },
+    "feature::nodeid": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::sentence",
+        "otype::clause",
+        "otype::wg"
+      ],
+      "featureName": "nodeid",
+      "description": "node id (as in the XML source data)",
+      "datatype": "String"
+    },
+    "feature::normalized": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "normalized",
+      "description": "lemma normalized",
+      "datatype": "String"
+    },
+    "feature::note": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "note",
+      "description": "annotation of linguistic nature",
+      "datatype": "String"
+    },
+    "feature::num": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::book",
+        "otype::sentence",
+        "otype::group",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "num",
+      "description": "generated number (not in xml): book: (Matthew=1, Mark=2, ..., Revelation=27); sentence: numbered per chapter; word: numbered per verse.",
+      "datatype": "Integer"
+    },
+    "feature::number": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "number",
+      "description": "grammatical number",
+      "datatype": "String"
+    },
+    "feature::otype": {
+      "type": "node_feature",
+      "valid_on": [],
+      "featureName": "otype",
+      "description": "No feature description",
+      "datatype": "String"
+    },
+    "feature::person": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "person",
+      "description": "grammatical person",
+      "datatype": "String"
+    },
+    "feature::punctuation": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "punctuation",
+      "description": "punctuation found after a word",
+      "datatype": "String"
+    },
+    "feature::ref": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "ref",
+      "description": "biblical reference with word counting",
+      "datatype": "String"
+    },
+    "feature::referent": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "referent",
+      "description": "number of referent",
+      "datatype": "String"
+    },
+    "feature::rela": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::wg",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "rela",
+      "description": "this is XML attribute rela",
+      "datatype": "String"
+    },
+    "feature::role": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::group",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "role",
+      "description": "role",
+      "datatype": "String"
+    },
+    "feature::rule": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::sentence",
+        "otype::group",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase"
+      ],
+      "featureName": "rule",
+      "description": "syntactical rule",
+      "datatype": "String"
+    },
+    "feature::sp": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "sp",
+      "description": "part-of-speach",
+      "datatype": "String"
+    },
+    "feature::strong": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "strong",
+      "description": "strong number",
+      "datatype": "Integer"
+    },
+    "feature::subjrefspec": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "subjrefspec",
+      "description": "this is XML attribute subjrefspec",
+      "datatype": "String"
+    },
+    "feature::tense": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "tense",
+      "description": "verbal tense",
+      "datatype": "String"
+    },
+    "feature::text": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "text",
+      "description": "the text of a word",
+      "datatype": "String"
+    },
+    "feature::trailer": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "trailer",
+      "description": "material after the end of the word (excluding critical signs)",
+      "datatype": "String"
+    },
+    "feature::trans": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "trans",
+      "description": "translation of the word surface text according to the Berean Interlinear Bible",
+      "datatype": "String"
+    },
+    "feature::translit": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "translit",
+      "description": "transliteration of the word surface text",
+      "datatype": "String"
+    },
+    "feature::typ": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::group",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase"
+      ],
+      "featureName": "typ",
+      "description": "syntactical type (on sentence, group, clause or phrase)",
+      "datatype": "String"
+    },
+    "feature::typems": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::sentence",
+        "otype::group",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "typems",
+      "description": "morphological type (on word), syntactical type (on sentence, group, clause, phrase or wg)",
+      "datatype": "String"
+    },
+    "feature::unaccent": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "unaccent",
+      "description": "word in unicode characters without accents and diacritical markers",
+      "datatype": "String"
+    },
+    "feature::unicode": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "unicode",
+      "description": "word in unicode characters plus material after it",
+      "datatype": "String"
+    },
+    "feature::variant": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "variant",
+      "description": "this is XML attribute variant",
+      "datatype": "String"
+    },
+    "feature::verse": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::verse",
+        "otype::sentence",
+        "otype::group",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "verse",
+      "description": "verse number, from ref attribute in xml",
+      "datatype": "Integer"
+    },
+    "feature::voice": {
+      "type": "node_feature",
+      "valid_on": [
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "voice",
+      "description": "verbal voice",
+      "datatype": "String"
+    },
+    "feature::frame": {
+      "type": "edge_feature",
+      "valid_on": [
+        "otype::word"
+      ],
+      "featureName": "frame",
+      "description": "frame",
+      "datatype": "String"
+    },
+    "feature::oslots": {
+      "type": "edge_feature",
+      "valid_on": [],
+      "featureName": "oslots",
+      "description": "No feature description",
+      "datatype": "String"
+    },
+    "feature::parent": {
+      "type": "edge_feature",
+      "valid_on": [
+        "otype::sentence",
+        "otype::group",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "parent",
+      "description": "parent relationship between words",
+      "datatype": "String"
+    },
+    "feature::sibling": {
+      "type": "edge_feature",
+      "valid_on": [
+        "otype::sentence",
+        "otype::group",
+        "otype::clause",
+        "otype::wg",
+        "otype::phrase",
+        "otype::subphrase",
+        "otype::word"
+      ],
+      "featureName": "sibling",
+      "description": "this is XML attribute sibling",
+      "datatype": "Integer"
+    },
+    "feature::subjref": {
+      "type": "edge_feature",
+      "valid_on": [
+        "otype::word"
+      ],
+      "featureName": "subjref",
+      "description": "number of subject referent",
+      "datatype": "String"
+    }
+  },
+  "edges": [
+    {
+      "from": "feature::after",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            " ",
+            37661
+          ],
+          [
+            ", ",
+            3892
+          ],
+          [
+            ". ",
+            2724
+          ],
+          [
+            "\u00b7 ",
+            1187
+          ],
+          [
+            "; ",
+            588
+          ],
+          [
+            ",\u2014 ",
+            8
+          ],
+          [
+            "). ",
+            4
+          ],
+          [
+            "\u2014 ",
+            3
+          ],
+          [
+            ",) ",
+            2
+          ],
+          [
+            "\u00b7\u2014 ",
+            2
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::after",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            " ",
+            119261
+          ],
+          [
+            ", ",
+            9439
+          ],
+          [
+            ". ",
+            5704
+          ],
+          [
+            "\u00b7 ",
+            2355
+          ],
+          [
+            "; ",
+            969
+          ],
+          [
+            ",\u2014 ",
+            18
+          ],
+          [
+            "\u2014 ",
+            7
+          ],
+          [
+            "). ",
+            6
+          ],
+          [
+            ".]] ",
+            4
+          ],
+          [
+            "\u00b7\u2014 ",
+            4
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::after",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            " ",
+            119261
+          ],
+          [
+            ", ",
+            9439
+          ],
+          [
+            ". ",
+            5704
+          ],
+          [
+            "\u00b7 ",
+            2355
+          ],
+          [
+            "; ",
+            969
+          ],
+          [
+            ",\u2014 ",
+            18
+          ],
+          [
+            "\u2014 ",
+            7
+          ],
+          [
+            "). ",
+            6
+          ],
+          [
+            ".]] ",
+            4
+          ],
+          [
+            "\u00b7\u2014 ",
+            4
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::appositioncontainer",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            1,
+            62
+          ]
+        ],
+        "total": 62,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::appositioncontainer",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            1,
+            1908
+          ]
+        ],
+        "total": 1908,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::appositioncontainer",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            1,
+            715
+          ]
+        ],
+        "total": 715,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::appositioncontainer",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            1,
+            1846
+          ]
+        ],
+        "total": 1846,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::articular",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            1,
+            229
+          ]
+        ],
+        "total": 229,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::articular",
+      "to": "otype::group",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "group",
+        "freq": [
+          [
+            1,
+            181
+          ]
+        ],
+        "total": 181,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::articular",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            1,
+            3386
+          ]
+        ],
+        "total": 3386,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::articular",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            1,
+            28772
+          ]
+        ],
+        "total": 28772,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::articular",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            1,
+            13079
+          ]
+        ],
+        "total": 13079,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::articular",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            1,
+            24976
+          ]
+        ],
+        "total": 24976,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::before",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "\u2014",
+            8
+          ],
+          [
+            "(",
+            6
+          ],
+          [
+            "[[",
+            2
+          ]
+        ],
+        "total": 16,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::before",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "\u2014",
+            16
+          ],
+          [
+            "(",
+            10
+          ],
+          [
+            "[[",
+            7
+          ],
+          [
+            "[",
+            1
+          ]
+        ],
+        "total": 34,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::before",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "\u2014",
+            16
+          ],
+          [
+            "(",
+            10
+          ],
+          [
+            "[[",
+            7
+          ],
+          [
+            "[",
+            1
+          ]
+        ],
+        "total": 34,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::book",
+      "to": "otype::book",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "book",
+        "freq": [
+          [
+            "Acts",
+            1
+          ],
+          [
+            "Colossians",
+            1
+          ],
+          [
+            "Ephesians",
+            1
+          ],
+          [
+            "Galatians",
+            1
+          ],
+          [
+            "Hebrews",
+            1
+          ],
+          [
+            "III_John",
+            1
+          ],
+          [
+            "II_Corinthians",
+            1
+          ],
+          [
+            "II_John",
+            1
+          ],
+          [
+            "II_Peter",
+            1
+          ],
+          [
+            "II_Thessalonians",
+            1
+          ]
+        ],
+        "total": 27,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::book",
+      "to": "otype::chapter",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "chapter",
+        "freq": [
+          [
+            "Acts",
+            28
+          ],
+          [
+            "Matthew",
+            28
+          ],
+          [
+            "Luke",
+            24
+          ],
+          [
+            "Revelation",
+            22
+          ],
+          [
+            "John",
+            21
+          ],
+          [
+            "I_Corinthians",
+            16
+          ],
+          [
+            "Mark",
+            16
+          ],
+          [
+            "Romans",
+            16
+          ],
+          [
+            "Hebrews",
+            13
+          ],
+          [
+            "II_Corinthians",
+            13
+          ]
+        ],
+        "total": 260,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::book",
+      "to": "otype::verse",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "verse",
+        "freq": [
+          [
+            "Luke",
+            1149
+          ],
+          [
+            "Matthew",
+            1068
+          ],
+          [
+            "Acts",
+            1002
+          ],
+          [
+            "John",
+            879
+          ],
+          [
+            "Mark",
+            674
+          ],
+          [
+            "I_Corinthians",
+            437
+          ],
+          [
+            "Romans",
+            432
+          ],
+          [
+            "Revelation",
+            405
+          ],
+          [
+            "Hebrews",
+            303
+          ],
+          [
+            "II_Corinthians",
+            256
+          ]
+        ],
+        "total": 7944,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::book",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            "Luke",
+            1155
+          ],
+          [
+            "Matthew",
+            1133
+          ],
+          [
+            "John",
+            1038
+          ],
+          [
+            "Acts",
+            883
+          ],
+          [
+            "Mark",
+            727
+          ],
+          [
+            "I_Corinthians",
+            524
+          ],
+          [
+            "Revelation",
+            466
+          ],
+          [
+            "Romans",
+            465
+          ],
+          [
+            "II_Corinthians",
+            253
+          ],
+          [
+            "Hebrews",
+            241
+          ]
+        ],
+        "total": 8011,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::book",
+      "to": "otype::group",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "group",
+        "freq": [
+          [
+            "Acts",
+            1288
+          ],
+          [
+            "Luke",
+            1232
+          ],
+          [
+            "Matthew",
+            1165
+          ],
+          [
+            "Revelation",
+            909
+          ],
+          [
+            "John",
+            882
+          ],
+          [
+            "Mark",
+            753
+          ],
+          [
+            "I_Corinthians",
+            431
+          ],
+          [
+            "Romans",
+            362
+          ],
+          [
+            "Hebrews",
+            325
+          ],
+          [
+            "II_Corinthians",
+            222
+          ]
+        ],
+        "total": 8945,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::book",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "Luke",
+            6563
+          ],
+          [
+            "Matthew",
+            5882
+          ],
+          [
+            "Acts",
+            5604
+          ],
+          [
+            "John",
+            5298
+          ],
+          [
+            "Mark",
+            3887
+          ],
+          [
+            "Revelation",
+            2524
+          ],
+          [
+            "I_Corinthians",
+            2210
+          ],
+          [
+            "Romans",
+            1977
+          ],
+          [
+            "Hebrews",
+            1411
+          ],
+          [
+            "II_Corinthians",
+            1381
+          ]
+        ],
+        "total": 42506,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::book",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "Luke",
+            15204
+          ],
+          [
+            "Acts",
+            14345
+          ],
+          [
+            "Matthew",
+            14152
+          ],
+          [
+            "John",
+            11626
+          ],
+          [
+            "Mark",
+            8650
+          ],
+          [
+            "Revelation",
+            8171
+          ],
+          [
+            "Romans",
+            5471
+          ],
+          [
+            "I_Corinthians",
+            5218
+          ],
+          [
+            "Hebrews",
+            3822
+          ],
+          [
+            "II_Corinthians",
+            3485
+          ]
+        ],
+        "total": 106868,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::book",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "Luke",
+            10162
+          ],
+          [
+            "Matthew",
+            9538
+          ],
+          [
+            "Acts",
+            9186
+          ],
+          [
+            "John",
+            8871
+          ],
+          [
+            "Mark",
+            6077
+          ],
+          [
+            "Revelation",
+            3916
+          ],
+          [
+            "I_Corinthians",
+            3517
+          ],
+          [
+            "Romans",
+            3331
+          ],
+          [
+            "Hebrews",
+            2452
+          ],
+          [
+            "II_Corinthians",
+            2108
+          ]
+        ],
+        "total": 69007,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::book",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "Luke",
+            25710
+          ],
+          [
+            "Acts",
+            24963
+          ],
+          [
+            "Matthew",
+            24271
+          ],
+          [
+            "John",
+            20051
+          ],
+          [
+            "Mark",
+            14560
+          ],
+          [
+            "Revelation",
+            14104
+          ],
+          [
+            "Romans",
+            9767
+          ],
+          [
+            "I_Corinthians",
+            8873
+          ],
+          [
+            "Hebrews",
+            6800
+          ],
+          [
+            "II_Corinthians",
+            6098
+          ]
+        ],
+        "total": 185185,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::book",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "Luke",
+            19456
+          ],
+          [
+            "Acts",
+            18393
+          ],
+          [
+            "Matthew",
+            18299
+          ],
+          [
+            "John",
+            15643
+          ],
+          [
+            "Mark",
+            11277
+          ],
+          [
+            "Revelation",
+            9832
+          ],
+          [
+            "Romans",
+            7100
+          ],
+          [
+            "I_Corinthians",
+            6820
+          ],
+          [
+            "Hebrews",
+            4955
+          ],
+          [
+            "II_Corinthians",
+            4469
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::bookshort",
+      "to": "otype::book",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "book",
+        "freq": [
+          [
+            "1CO",
+            1
+          ],
+          [
+            "1JN",
+            1
+          ],
+          [
+            "1PE",
+            1
+          ],
+          [
+            "1TH",
+            1
+          ],
+          [
+            "1TI",
+            1
+          ],
+          [
+            "2CO",
+            1
+          ],
+          [
+            "2JN",
+            1
+          ],
+          [
+            "2PE",
+            1
+          ],
+          [
+            "2TH",
+            1
+          ],
+          [
+            "2TI",
+            1
+          ]
+        ],
+        "total": 27,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::bookshort",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            "LUK",
+            1155
+          ],
+          [
+            "MAT",
+            1133
+          ],
+          [
+            "JHN",
+            1038
+          ],
+          [
+            "ACT",
+            883
+          ],
+          [
+            "MRK",
+            727
+          ],
+          [
+            "1CO",
+            524
+          ],
+          [
+            "REV",
+            466
+          ],
+          [
+            "ROM",
+            465
+          ],
+          [
+            "2CO",
+            253
+          ],
+          [
+            "HEB",
+            241
+          ]
+        ],
+        "total": 8011,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::bookshort",
+      "to": "otype::group",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "group",
+        "freq": [
+          [
+            "ACT",
+            1288
+          ],
+          [
+            "LUK",
+            1232
+          ],
+          [
+            "MAT",
+            1165
+          ],
+          [
+            "REV",
+            909
+          ],
+          [
+            "JHN",
+            882
+          ],
+          [
+            "MRK",
+            753
+          ],
+          [
+            "1CO",
+            431
+          ],
+          [
+            "ROM",
+            362
+          ],
+          [
+            "HEB",
+            325
+          ],
+          [
+            "2CO",
+            222
+          ]
+        ],
+        "total": 8945,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::bookshort",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "LUK",
+            6563
+          ],
+          [
+            "MAT",
+            5882
+          ],
+          [
+            "ACT",
+            5604
+          ],
+          [
+            "JHN",
+            5298
+          ],
+          [
+            "MRK",
+            3887
+          ],
+          [
+            "REV",
+            2524
+          ],
+          [
+            "1CO",
+            2210
+          ],
+          [
+            "ROM",
+            1977
+          ],
+          [
+            "HEB",
+            1411
+          ],
+          [
+            "2CO",
+            1381
+          ]
+        ],
+        "total": 42506,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::bookshort",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "LUK",
+            15204
+          ],
+          [
+            "ACT",
+            14345
+          ],
+          [
+            "MAT",
+            14152
+          ],
+          [
+            "JHN",
+            11626
+          ],
+          [
+            "MRK",
+            8650
+          ],
+          [
+            "REV",
+            8171
+          ],
+          [
+            "ROM",
+            5471
+          ],
+          [
+            "1CO",
+            5218
+          ],
+          [
+            "HEB",
+            3822
+          ],
+          [
+            "2CO",
+            3485
+          ]
+        ],
+        "total": 106868,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::bookshort",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "LUK",
+            10162
+          ],
+          [
+            "MAT",
+            9538
+          ],
+          [
+            "ACT",
+            9186
+          ],
+          [
+            "JHN",
+            8871
+          ],
+          [
+            "MRK",
+            6077
+          ],
+          [
+            "REV",
+            3916
+          ],
+          [
+            "1CO",
+            3517
+          ],
+          [
+            "ROM",
+            3331
+          ],
+          [
+            "HEB",
+            2452
+          ],
+          [
+            "2CO",
+            2108
+          ]
+        ],
+        "total": 69007,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::bookshort",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "LUK",
+            25710
+          ],
+          [
+            "ACT",
+            24963
+          ],
+          [
+            "MAT",
+            24271
+          ],
+          [
+            "JHN",
+            20051
+          ],
+          [
+            "MRK",
+            14560
+          ],
+          [
+            "REV",
+            14104
+          ],
+          [
+            "ROM",
+            9767
+          ],
+          [
+            "1CO",
+            8873
+          ],
+          [
+            "HEB",
+            6800
+          ],
+          [
+            "2CO",
+            6098
+          ]
+        ],
+        "total": 185185,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::bookshort",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "LUK",
+            19456
+          ],
+          [
+            "ACT",
+            18393
+          ],
+          [
+            "MAT",
+            18299
+          ],
+          [
+            "JHN",
+            15643
+          ],
+          [
+            "MRK",
+            11277
+          ],
+          [
+            "REV",
+            9832
+          ],
+          [
+            "ROM",
+            7100
+          ],
+          [
+            "1CO",
+            6820
+          ],
+          [
+            "HEB",
+            4955
+          ],
+          [
+            "2CO",
+            4469
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::case",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "nominative",
+            9609
+          ],
+          [
+            "accusative",
+            6170
+          ],
+          [
+            "dative",
+            3265
+          ],
+          [
+            "genitive",
+            1408
+          ],
+          [
+            "vocative",
+            1
+          ]
+        ],
+        "total": 20453,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::case",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "nominative",
+            24197
+          ],
+          [
+            "accusative",
+            23031
+          ],
+          [
+            "genitive",
+            19515
+          ],
+          [
+            "dative",
+            12126
+          ],
+          [
+            "vocative",
+            649
+          ]
+        ],
+        "total": 79518,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::case",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "nominative",
+            24197
+          ],
+          [
+            "accusative",
+            23031
+          ],
+          [
+            "genitive",
+            19515
+          ],
+          [
+            "dative",
+            12126
+          ],
+          [
+            "vocative",
+            649
+          ]
+        ],
+        "total": 79518,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::chapter",
+      "to": "otype::chapter",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "chapter",
+        "freq": [
+          [
+            1,
+            27
+          ],
+          [
+            2,
+            23
+          ],
+          [
+            3,
+            23
+          ],
+          [
+            4,
+            20
+          ],
+          [
+            5,
+            17
+          ],
+          [
+            6,
+            13
+          ],
+          [
+            7,
+            10
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "total": 260,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::chapter",
+      "to": "otype::verse",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "verse",
+        "freq": [
+          [
+            1,
+            691
+          ],
+          [
+            2,
+            575
+          ],
+          [
+            3,
+            522
+          ],
+          [
+            4,
+            510
+          ],
+          [
+            5,
+            469
+          ],
+          [
+            6,
+            386
+          ],
+          [
+            11,
+            365
+          ],
+          [
+            9,
+            356
+          ],
+          [
+            7,
+            354
+          ],
+          [
+            10,
+            348
+          ]
+        ],
+        "total": 7944,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::chapter",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            1,
+            519
+          ],
+          [
+            3,
+            497
+          ],
+          [
+            4,
+            496
+          ],
+          [
+            2,
+            489
+          ],
+          [
+            5,
+            481
+          ],
+          [
+            6,
+            404
+          ],
+          [
+            12,
+            399
+          ],
+          [
+            9,
+            398
+          ],
+          [
+            11,
+            390
+          ],
+          [
+            8,
+            386
+          ]
+        ],
+        "total": 8011,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::chapter",
+      "to": "otype::group",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "group",
+        "freq": [
+          [
+            1,
+            856
+          ],
+          [
+            2,
+            676
+          ],
+          [
+            4,
+            572
+          ],
+          [
+            3,
+            489
+          ],
+          [
+            5,
+            481
+          ],
+          [
+            6,
+            467
+          ],
+          [
+            9,
+            418
+          ],
+          [
+            10,
+            404
+          ],
+          [
+            7,
+            392
+          ],
+          [
+            12,
+            391
+          ]
+        ],
+        "total": 8945,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::chapter",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            1,
+            2921
+          ],
+          [
+            2,
+            2859
+          ],
+          [
+            4,
+            2599
+          ],
+          [
+            3,
+            2456
+          ],
+          [
+            5,
+            2439
+          ],
+          [
+            9,
+            2111
+          ],
+          [
+            6,
+            2109
+          ],
+          [
+            11,
+            2051
+          ],
+          [
+            12,
+            1961
+          ],
+          [
+            7,
+            1954
+          ]
+        ],
+        "total": 42506,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::chapter",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            1,
+            9177
+          ],
+          [
+            2,
+            7680
+          ],
+          [
+            4,
+            6717
+          ],
+          [
+            3,
+            6665
+          ],
+          [
+            5,
+            6026
+          ],
+          [
+            6,
+            5292
+          ],
+          [
+            9,
+            4924
+          ],
+          [
+            11,
+            4837
+          ],
+          [
+            7,
+            4817
+          ],
+          [
+            12,
+            4790
+          ]
+        ],
+        "total": 106868,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::chapter",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            1,
+            5226
+          ],
+          [
+            2,
+            4646
+          ],
+          [
+            4,
+            4191
+          ],
+          [
+            3,
+            4057
+          ],
+          [
+            5,
+            3900
+          ],
+          [
+            9,
+            3347
+          ],
+          [
+            6,
+            3317
+          ],
+          [
+            7,
+            3285
+          ],
+          [
+            11,
+            3216
+          ],
+          [
+            12,
+            3212
+          ]
+        ],
+        "total": 69007,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::chapter",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            1,
+            16566
+          ],
+          [
+            2,
+            13492
+          ],
+          [
+            3,
+            11833
+          ],
+          [
+            4,
+            11656
+          ],
+          [
+            5,
+            10446
+          ],
+          [
+            6,
+            9070
+          ],
+          [
+            7,
+            8408
+          ],
+          [
+            9,
+            8390
+          ],
+          [
+            11,
+            8266
+          ],
+          [
+            12,
+            8252
+          ]
+        ],
+        "total": 185185,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::chapter",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            1,
+            11685
+          ],
+          [
+            2,
+            9836
+          ],
+          [
+            3,
+            8610
+          ],
+          [
+            4,
+            8606
+          ],
+          [
+            5,
+            7821
+          ],
+          [
+            6,
+            6758
+          ],
+          [
+            9,
+            6393
+          ],
+          [
+            7,
+            6321
+          ],
+          [
+            11,
+            6242
+          ],
+          [
+            12,
+            6213
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::clausetype",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            "nominalized",
+            59
+          ]
+        ],
+        "total": 59,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::clausetype",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "nominalized",
+            5237
+          ]
+        ],
+        "total": 5237,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::clausetype",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "nominalized",
+            5296
+          ]
+        ],
+        "total": 5296,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::cls",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            "cl",
+            1476
+          ]
+        ],
+        "total": 1476,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::cls",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "cl",
+            28676
+          ]
+        ],
+        "total": 28676,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::cls",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "np",
+            30911
+          ],
+          [
+            "cl",
+            30152
+          ],
+          [
+            "pp",
+            11169
+          ],
+          [
+            "vp",
+            207
+          ],
+          [
+            "adjp",
+            168
+          ],
+          [
+            "advp",
+            166
+          ],
+          [
+            "adv",
+            7
+          ],
+          [
+            "nump",
+            7
+          ],
+          [
+            "conj",
+            1
+          ]
+        ],
+        "total": 72788,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::cls",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "verb",
+            27355
+          ],
+          [
+            "np",
+            10935
+          ],
+          [
+            "pp",
+            9609
+          ],
+          [
+            "pron",
+            8751
+          ],
+          [
+            "adv",
+            4390
+          ],
+          [
+            "noun",
+            2822
+          ],
+          [
+            "adj",
+            2304
+          ],
+          [
+            "det",
+            257
+          ],
+          [
+            "advp",
+            154
+          ],
+          [
+            "ptcl",
+            87
+          ]
+        ],
+        "total": 66851,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::cls",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "np",
+            30911
+          ],
+          [
+            "noun",
+            28455
+          ],
+          [
+            "verb",
+            28357
+          ],
+          [
+            "det",
+            19786
+          ],
+          [
+            "conj",
+            18228
+          ],
+          [
+            "pron",
+            16177
+          ],
+          [
+            "pp",
+            11169
+          ],
+          [
+            "prep",
+            10914
+          ],
+          [
+            "adj",
+            8452
+          ],
+          [
+            "adv",
+            6154
+          ]
+        ],
+        "total": 180415,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::cls",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "noun",
+            28455
+          ],
+          [
+            "verb",
+            28357
+          ],
+          [
+            "det",
+            19786
+          ],
+          [
+            "conj",
+            18227
+          ],
+          [
+            "pron",
+            16177
+          ],
+          [
+            "prep",
+            10914
+          ],
+          [
+            "adj",
+            8452
+          ],
+          [
+            "adv",
+            6147
+          ],
+          [
+            "ptcl",
+            773
+          ],
+          [
+            "num",
+            476
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::cltype",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            "Verbless",
+            77
+          ],
+          [
+            "VerbElided",
+            47
+          ],
+          [
+            "Minor",
+            1
+          ]
+        ],
+        "total": 125,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::cltype",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "VerbElided",
+            1003
+          ],
+          [
+            "Verbless",
+            884
+          ],
+          [
+            "Minor",
+            831
+          ]
+        ],
+        "total": 2718,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::cltype",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "VerbElided",
+            1050
+          ],
+          [
+            "Verbless",
+            961
+          ],
+          [
+            "Minor",
+            832
+          ]
+        ],
+        "total": 2843,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::criticalsign",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "\u2014",
+            11
+          ],
+          [
+            ")",
+            8
+          ],
+          [
+            "(",
+            6
+          ],
+          [
+            "]]",
+            3
+          ],
+          [
+            "[[",
+            2
+          ]
+        ],
+        "total": 30,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::criticalsign",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "\u2014",
+            25
+          ],
+          [
+            "(",
+            11
+          ],
+          [
+            ")",
+            11
+          ],
+          [
+            "[[",
+            7
+          ],
+          [
+            "]]",
+            7
+          ],
+          [
+            "[",
+            1
+          ],
+          [
+            "]",
+            1
+          ]
+        ],
+        "total": 63,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::criticalsign",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "\u2014",
+            25
+          ],
+          [
+            "(",
+            11
+          ],
+          [
+            ")",
+            11
+          ],
+          [
+            "[[",
+            7
+          ],
+          [
+            "]]",
+            7
+          ],
+          [
+            "[",
+            1
+          ],
+          [
+            "]",
+            1
+          ]
+        ],
+        "total": 63,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::crule",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            "ClCl",
+            619
+          ],
+          [
+            "ClCl2",
+            219
+          ]
+        ],
+        "total": 838,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::crule",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "ClCl",
+            3689
+          ],
+          [
+            "ClCl2",
+            1031
+          ]
+        ],
+        "total": 4720,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::crule",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "ClCl",
+            4308
+          ],
+          [
+            "ClCl2",
+            1250
+          ]
+        ],
+        "total": 5558,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::degree",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "comparative",
+            119
+          ],
+          [
+            "superlative",
+            32
+          ]
+        ],
+        "total": 151,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::degree",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "comparative",
+            313
+          ],
+          [
+            "superlative",
+            200
+          ]
+        ],
+        "total": 513,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::degree",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "comparative",
+            313
+          ],
+          [
+            "superlative",
+            200
+          ]
+        ],
+        "total": 513,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::discontinuous",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            1,
+            645
+          ]
+        ],
+        "total": 645,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::discontinuous",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            1,
+            6034
+          ]
+        ],
+        "total": 6034,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::discontinuous",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            1,
+            6034
+          ]
+        ],
+        "total": 6034,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::domain",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "092004",
+            3982
+          ],
+          [
+            "033006",
+            2791
+          ],
+          [
+            "013001",
+            1555
+          ],
+          [
+            "069002",
+            1424
+          ],
+          [
+            "092003",
+            1277
+          ],
+          [
+            "092001",
+            941
+          ],
+          [
+            "015004",
+            889
+          ],
+          [
+            "092006",
+            822
+          ],
+          [
+            "067002",
+            790
+          ],
+          [
+            "024001",
+            686
+          ]
+        ],
+        "total": 43153,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::domain",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "092004",
+            26129
+          ],
+          [
+            "089017",
+            4370
+          ],
+          [
+            "093001",
+            3671
+          ],
+          [
+            "033006",
+            3223
+          ],
+          [
+            "012001",
+            3000
+          ],
+          [
+            "089015",
+            2810
+          ],
+          [
+            "092003",
+            2444
+          ],
+          [
+            "069002",
+            1857
+          ],
+          [
+            "092001",
+            1845
+          ],
+          [
+            "089023",
+            1780
+          ]
+        ],
+        "total": 126879,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::domain",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "092004",
+            26129
+          ],
+          [
+            "089017",
+            4370
+          ],
+          [
+            "093001",
+            3671
+          ],
+          [
+            "033006",
+            3223
+          ],
+          [
+            "012001",
+            3000
+          ],
+          [
+            "089015",
+            2810
+          ],
+          [
+            "092003",
+            2444
+          ],
+          [
+            "069002",
+            1857
+          ],
+          [
+            "092001",
+            1845
+          ],
+          [
+            "089023",
+            1780
+          ]
+        ],
+        "total": 126879,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::framespec",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "A0:n00000000000",
+            879
+          ],
+          [
+            "A1:n00000000000",
+            166
+          ],
+          [
+            "A0:n47010001004",
+            47
+          ],
+          [
+            "A0:n46003022002",
+            46
+          ],
+          [
+            "A0:n41006030007",
+            34
+          ],
+          [
+            "A0:n66001009002",
+            32
+          ],
+          [
+            "A0:n40005001015",
+            30
+          ],
+          [
+            "A0:n45001001001",
+            28
+          ],
+          [
+            "A0:n50001001001",
+            25
+          ],
+          [
+            "A0:n42020034005",
+            24
+          ]
+        ],
+        "total": 24783,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::framespec",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "A0:n00000000000",
+            896
+          ],
+          [
+            "A1:n00000000000",
+            169
+          ],
+          [
+            "A0:n47010001004",
+            47
+          ],
+          [
+            "A0:n46003022002",
+            46
+          ],
+          [
+            "A0:n41006030007",
+            34
+          ],
+          [
+            "A0:n66001009002",
+            34
+          ],
+          [
+            "A0:n40005001015",
+            31
+          ],
+          [
+            "A0:n45001001001",
+            29
+          ],
+          [
+            "A0:n50001001001",
+            27
+          ],
+          [
+            "A0:n42020034005",
+            25
+          ]
+        ],
+        "total": 25493,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::framespec",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "A0:n00000000000",
+            896
+          ],
+          [
+            "A1:n00000000000",
+            169
+          ],
+          [
+            "A0:n47010001004",
+            47
+          ],
+          [
+            "A0:n46003022002",
+            46
+          ],
+          [
+            "A0:n41006030007",
+            34
+          ],
+          [
+            "A0:n66001009002",
+            34
+          ],
+          [
+            "A0:n40005001015",
+            31
+          ],
+          [
+            "A0:n45001001001",
+            29
+          ],
+          [
+            "A0:n50001001001",
+            27
+          ],
+          [
+            "A0:n42020034005",
+            25
+          ]
+        ],
+        "total": 25493,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::function",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            "Pred-Obj",
+            51
+          ],
+          [
+            "Subj-PreC-PreC",
+            42
+          ],
+          [
+            "Cmpl-Pred",
+            38
+          ],
+          [
+            "Cmpl-Pred-Obj",
+            34
+          ],
+          [
+            "Subj-PreC",
+            29
+          ],
+          [
+            "PreC-Subj",
+            28
+          ],
+          [
+            "Subj-Cmpl",
+            23
+          ],
+          [
+            "Pred-Obj-Cmpl",
+            22
+          ],
+          [
+            "Subj-Pred-Obj",
+            20
+          ],
+          [
+            "Pred-Obj-Subj",
+            19
+          ]
+        ],
+        "total": 778,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::function",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "Pred-Obj",
+            2675
+          ],
+          [
+            "Pred-Cmpl",
+            1897
+          ],
+          [
+            "Cmpl-Pred",
+            1147
+          ],
+          [
+            "Obj-Pred",
+            1065
+          ],
+          [
+            "Cmpl-Pred-Obj",
+            650
+          ],
+          [
+            "Subj-Pred",
+            626
+          ],
+          [
+            "Pred-Subj",
+            603
+          ],
+          [
+            "Pred-Obj-Cmpl",
+            596
+          ],
+          [
+            "Subj-PreC-PreC",
+            595
+          ],
+          [
+            "PreC-PreC",
+            554
+          ]
+        ],
+        "total": 21568,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::function",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "Cmpl",
+            11056
+          ],
+          [
+            "Subj",
+            5740
+          ],
+          [
+            "Objc",
+            4524
+          ],
+          [
+            "Pred-Obj",
+            2726
+          ],
+          [
+            "Pred-Cmpl",
+            1909
+          ],
+          [
+            "PreC",
+            1685
+          ],
+          [
+            "Cmpl-Pred",
+            1185
+          ],
+          [
+            "Obj-Pred",
+            1077
+          ],
+          [
+            "Cmpl-Pred-Obj",
+            684
+          ],
+          [
+            "Subj-Pred",
+            639
+          ]
+        ],
+        "total": 45276,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::function",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "Pred",
+            24767
+          ],
+          [
+            "Cmpl",
+            13012
+          ],
+          [
+            "Subj",
+            10198
+          ],
+          [
+            "Objc",
+            9337
+          ],
+          [
+            "PreC",
+            6097
+          ],
+          [
+            "Adv",
+            5596
+          ]
+        ],
+        "total": 69007,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::function",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "Pred",
+            24767
+          ],
+          [
+            "Cmpl",
+            13012
+          ],
+          [
+            "Subj",
+            10198
+          ],
+          [
+            "Objc",
+            9337
+          ],
+          [
+            "PreC",
+            6097
+          ],
+          [
+            "Adv",
+            5596
+          ]
+        ],
+        "total": 69007,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::function",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "Pred",
+            24767
+          ],
+          [
+            "Adv",
+            5596
+          ],
+          [
+            "Objc",
+            4813
+          ],
+          [
+            "PreC",
+            4487
+          ],
+          [
+            "Subj",
+            4458
+          ],
+          [
+            "Cmpl",
+            1956
+          ]
+        ],
+        "total": 46077,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::gender",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "masculine",
+            12430
+          ],
+          [
+            "neuter",
+            3066
+          ],
+          [
+            "feminine",
+            2162
+          ]
+        ],
+        "total": 17658,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::gender",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "masculine",
+            41486
+          ],
+          [
+            "feminine",
+            18736
+          ],
+          [
+            "neuter",
+            13753
+          ]
+        ],
+        "total": 73975,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::gender",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "masculine",
+            41486
+          ],
+          [
+            "feminine",
+            18736
+          ],
+          [
+            "neuter",
+            13753
+          ]
+        ],
+        "total": 73975,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::gloss",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "the",
+            19783
+          ],
+          [
+            "and, also, likewise",
+            8978
+          ],
+          [
+            "he, she, it, himself, herself, itself; even, very; same",
+            5550
+          ],
+          [
+            "you",
+            2892
+          ],
+          [
+            "but, and",
+            2787
+          ],
+          [
+            "(with dat.) in",
+            2743
+          ],
+          [
+            "I",
+            2567
+          ],
+          [
+            "am, exist",
+            2457
+          ],
+          [
+            "say, tell",
+            2255
+          ],
+          [
+            "no, not",
+            1622
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::id",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "n40001002001",
+            1
+          ],
+          [
+            "n40001002002",
+            1
+          ],
+          [
+            "n40001002005",
+            1
+          ],
+          [
+            "n40001002007",
+            1
+          ],
+          [
+            "n40001002010",
+            1
+          ],
+          [
+            "n40001002012",
+            1
+          ],
+          [
+            "n40001003001",
+            1
+          ],
+          [
+            "n40001003003",
+            1
+          ],
+          [
+            "n40001003012",
+            1
+          ],
+          [
+            "n40001003014",
+            1
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::id",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "n40001001001",
+            1
+          ],
+          [
+            "n40001001002",
+            1
+          ],
+          [
+            "n40001001003",
+            1
+          ],
+          [
+            "n40001001004",
+            1
+          ],
+          [
+            "n40001001005",
+            1
+          ],
+          [
+            "n40001001006",
+            1
+          ],
+          [
+            "n40001001007",
+            1
+          ],
+          [
+            "n40001001008",
+            1
+          ],
+          [
+            "n40001002001",
+            1
+          ],
+          [
+            "n40001002002",
+            1
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::id",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "n40001001001",
+            1
+          ],
+          [
+            "n40001001002",
+            1
+          ],
+          [
+            "n40001001003",
+            1
+          ],
+          [
+            "n40001001004",
+            1
+          ],
+          [
+            "n40001001005",
+            1
+          ],
+          [
+            "n40001001006",
+            1
+          ],
+          [
+            "n40001001007",
+            1
+          ],
+          [
+            "n40001001008",
+            1
+          ],
+          [
+            "n40001002001",
+            1
+          ],
+          [
+            "n40001002002",
+            1
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::junction",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "coordinate",
+            9303
+          ],
+          [
+            "subordinate",
+            8438
+          ]
+        ],
+        "total": 17741,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::junction",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "coordinate",
+            9367
+          ],
+          [
+            "subordinate",
+            8554
+          ]
+        ],
+        "total": 17921,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::junction",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "subordinate",
+            57
+          ]
+        ],
+        "total": 57,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::junction",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "subordinate",
+            116
+          ],
+          [
+            "coordinate",
+            64
+          ]
+        ],
+        "total": 180,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::lang",
+      "to": "otype::book",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "book",
+        "freq": [
+          [
+            "el",
+            27
+          ]
+        ],
+        "total": 27,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::lemma",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "\u03b1\u1f50\u03c4\u1f79\u03c2",
+            2839
+          ],
+          [
+            "\u03bb\u1f73\u03b3\u03c9",
+            2252
+          ],
+          [
+            "\u03b5\u1f30\u03bc\u1f77",
+            2251
+          ],
+          [
+            "\u03c3\u1f7b",
+            1468
+          ],
+          [
+            "\u1f10\u03b3\u1f7d",
+            1247
+          ],
+          [
+            "\u03bf\u1f50",
+            1182
+          ],
+          [
+            "\u1f45\u03c2",
+            1111
+          ],
+          [
+            "\u03bc\u1f75",
+            779
+          ],
+          [
+            "\u1f14\u03c7\u03c9",
+            707
+          ],
+          [
+            "\u03b3\u1f77\u03bd\u03bf\u03bc\u03b1\u03b9",
+            663
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::lemma",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "\u1f41",
+            19783
+          ],
+          [
+            "\u03ba\u03b1\u1f77",
+            8978
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u1f79\u03c2",
+            5561
+          ],
+          [
+            "\u03c3\u1f7b",
+            2892
+          ],
+          [
+            "\u03b4\u1f73",
+            2787
+          ],
+          [
+            "\u1f10\u03bd",
+            2743
+          ],
+          [
+            "\u1f10\u03b3\u1f7d",
+            2567
+          ],
+          [
+            "\u03b5\u1f30\u03bc\u1f77",
+            2457
+          ],
+          [
+            "\u03bb\u1f73\u03b3\u03c9",
+            2255
+          ],
+          [
+            "\u03b5\u1f30\u03c2",
+            1766
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::lemma",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "\u1f41",
+            19783
+          ],
+          [
+            "\u03ba\u03b1\u1f77",
+            8978
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u1f79\u03c2",
+            5561
+          ],
+          [
+            "\u03c3\u1f7b",
+            2892
+          ],
+          [
+            "\u03b4\u1f73",
+            2787
+          ],
+          [
+            "\u1f10\u03bd",
+            2743
+          ],
+          [
+            "\u1f10\u03b3\u1f7d",
+            2567
+          ],
+          [
+            "\u03b5\u1f30\u03bc\u1f77",
+            2457
+          ],
+          [
+            "\u03bb\u1f73\u03b3\u03c9",
+            2255
+          ],
+          [
+            "\u03b5\u1f30\u03c2",
+            1766
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::lemmatranslit",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "autos",
+            2839
+          ],
+          [
+            "lego",
+            2252
+          ],
+          [
+            "eimi",
+            2251
+          ],
+          [
+            "su",
+            1468
+          ],
+          [
+            "ego",
+            1247
+          ],
+          [
+            "ou",
+            1206
+          ],
+          [
+            "os",
+            1115
+          ],
+          [
+            "me",
+            779
+          ],
+          [
+            "tis",
+            722
+          ],
+          [
+            "ekho",
+            707
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::lemmatranslit",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "o",
+            19800
+          ],
+          [
+            "kai",
+            8978
+          ],
+          [
+            "autos",
+            5561
+          ],
+          [
+            "su",
+            2892
+          ],
+          [
+            "de",
+            2792
+          ],
+          [
+            "en",
+            2743
+          ],
+          [
+            "ego",
+            2567
+          ],
+          [
+            "eimi",
+            2457
+          ],
+          [
+            "lego",
+            2255
+          ],
+          [
+            "eis",
+            2102
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::lemmatranslit",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "o",
+            19800
+          ],
+          [
+            "kai",
+            8978
+          ],
+          [
+            "autos",
+            5561
+          ],
+          [
+            "su",
+            2892
+          ],
+          [
+            "de",
+            2792
+          ],
+          [
+            "en",
+            2743
+          ],
+          [
+            "ego",
+            2567
+          ],
+          [
+            "eimi",
+            2457
+          ],
+          [
+            "lego",
+            2255
+          ],
+          [
+            "eis",
+            2102
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::ln",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "92.11",
+            2617
+          ],
+          [
+            "33.69",
+            2334
+          ],
+          [
+            "69.3",
+            1399
+          ],
+          [
+            "92.1",
+            920
+          ],
+          [
+            "92.27",
+            812
+          ],
+          [
+            "92.7",
+            812
+          ],
+          [
+            "13.1",
+            699
+          ],
+          [
+            "13.4",
+            535
+          ],
+          [
+            "92.29",
+            522
+          ],
+          [
+            "15.81",
+            471
+          ]
+        ],
+        "total": 43153,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::ln",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "92.24",
+            19738
+          ],
+          [
+            "92.11",
+            4718
+          ],
+          [
+            "89.92",
+            2903
+          ],
+          [
+            "89.87",
+            2756
+          ],
+          [
+            "33.69",
+            2336
+          ],
+          [
+            "69.3",
+            1736
+          ],
+          [
+            "92.1",
+            1732
+          ],
+          [
+            "92.7",
+            1494
+          ],
+          [
+            "12.1",
+            1247
+          ],
+          [
+            "92.29",
+            1090
+          ]
+        ],
+        "total": 126879,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::ln",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "92.24",
+            19738
+          ],
+          [
+            "92.11",
+            4718
+          ],
+          [
+            "89.92",
+            2903
+          ],
+          [
+            "89.87",
+            2756
+          ],
+          [
+            "33.69",
+            2336
+          ],
+          [
+            "69.3",
+            1736
+          ],
+          [
+            "92.1",
+            1732
+          ],
+          [
+            "92.7",
+            1494
+          ],
+          [
+            "12.1",
+            1247
+          ],
+          [
+            "92.29",
+            1090
+          ]
+        ],
+        "total": 126879,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::mood",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "indicative",
+            15245
+          ],
+          [
+            "participle",
+            6320
+          ],
+          [
+            "infinitive",
+            2228
+          ],
+          [
+            "subjunctive",
+            1832
+          ],
+          [
+            "imperative",
+            1663
+          ],
+          [
+            "optative",
+            67
+          ]
+        ],
+        "total": 27355,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::mood",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "indicative",
+            15617
+          ],
+          [
+            "participle",
+            6653
+          ],
+          [
+            "infinitive",
+            2285
+          ],
+          [
+            "imperative",
+            1877
+          ],
+          [
+            "subjunctive",
+            1856
+          ],
+          [
+            "optative",
+            69
+          ]
+        ],
+        "total": 28357,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::mood",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "indicative",
+            15617
+          ],
+          [
+            "participle",
+            6653
+          ],
+          [
+            "infinitive",
+            2285
+          ],
+          [
+            "imperative",
+            1877
+          ],
+          [
+            "subjunctive",
+            1856
+          ],
+          [
+            "optative",
+            69
+          ]
+        ],
+        "total": 28357,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::morph",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "V-PAI-3S",
+            2226
+          ],
+          [
+            "ADV",
+            2081
+          ],
+          [
+            "PRT-N",
+            1977
+          ],
+          [
+            "V-2AAI-3S",
+            1244
+          ],
+          [
+            "V-AAI-3S",
+            1225
+          ],
+          [
+            "V-PAP-NSM",
+            880
+          ],
+          [
+            "V-PAI-1S",
+            765
+          ],
+          [
+            "P-ASM",
+            746
+          ],
+          [
+            "V-PAN",
+            730
+          ],
+          [
+            "P-DSM",
+            700
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::morph",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "CONJ",
+            16316
+          ],
+          [
+            "PREP",
+            10568
+          ],
+          [
+            "ADV",
+            3808
+          ],
+          [
+            "N-NSM",
+            3475
+          ],
+          [
+            "N-GSM",
+            2935
+          ],
+          [
+            "T-NSM",
+            2905
+          ],
+          [
+            "N-ASF",
+            2870
+          ],
+          [
+            "PRT-N",
+            2701
+          ],
+          [
+            "N-ASM",
+            2456
+          ],
+          [
+            "V-PAI-3S",
+            2271
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::morph",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "CONJ",
+            16316
+          ],
+          [
+            "PREP",
+            10568
+          ],
+          [
+            "ADV",
+            3808
+          ],
+          [
+            "N-NSM",
+            3475
+          ],
+          [
+            "N-GSM",
+            2935
+          ],
+          [
+            "T-NSM",
+            2905
+          ],
+          [
+            "N-ASF",
+            2870
+          ],
+          [
+            "PRT-N",
+            2701
+          ],
+          [
+            "N-ASM",
+            2456
+          ],
+          [
+            "V-PAI-3S",
+            2271
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::nodeid",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            "400040070010120",
+            1
+          ],
+          [
+            "400040100010070",
+            1
+          ],
+          [
+            "400050030010120",
+            1
+          ],
+          [
+            "400050040010060",
+            1
+          ],
+          [
+            "400050050010080",
+            1
+          ],
+          [
+            "400050060010100",
+            1
+          ],
+          [
+            "400050070010060",
+            1
+          ],
+          [
+            "400050080010100",
+            1
+          ],
+          [
+            "400050100010120",
+            1
+          ],
+          [
+            "400050120010110",
+            1
+          ]
+        ],
+        "total": 838,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::nodeid",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "400010200010490",
+            1
+          ],
+          [
+            "400010200120390",
+            1
+          ],
+          [
+            "400010200130100",
+            1
+          ],
+          [
+            "400010210050150",
+            1
+          ],
+          [
+            "400010220140230",
+            1
+          ],
+          [
+            "400010230010220",
+            1
+          ],
+          [
+            "400020010140270",
+            1
+          ],
+          [
+            "400020020010200",
+            1
+          ],
+          [
+            "400020050010370",
+            1
+          ],
+          [
+            "400020050090290",
+            1
+          ]
+        ],
+        "total": 4720,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::nodeid",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "400010200010490",
+            1
+          ],
+          [
+            "400010200120390",
+            1
+          ],
+          [
+            "400010200130100",
+            1
+          ],
+          [
+            "400010210050150",
+            1
+          ],
+          [
+            "400010220140230",
+            1
+          ],
+          [
+            "400010230010220",
+            1
+          ],
+          [
+            "400020010140270",
+            1
+          ],
+          [
+            "400020020010200",
+            1
+          ],
+          [
+            "400020050010370",
+            1
+          ],
+          [
+            "400020050090290",
+            1
+          ]
+        ],
+        "total": 5558,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::normalized",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "\u03b1\u1f50\u03c4\u1f79\u03bd",
+            746
+          ],
+          [
+            "\u03bc\u1f75",
+            717
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u1ff7",
+            710
+          ],
+          [
+            "\u03bf\u1f50\u03ba",
+            660
+          ],
+          [
+            "\u03b5\u1f36\u03c0\u03b5\u03bd",
+            586
+          ],
+          [
+            "\u1f10\u03c3\u03c4\u03b9\u03bd",
+            556
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u03bf\u1fd6\u03c2",
+            491
+          ],
+          [
+            "\u1f51\u03bc\u1fd6\u03bd",
+            475
+          ],
+          [
+            "\u03bf\u1f50",
+            378
+          ],
+          [
+            "\u03bb\u1f73\u03b3\u03b5\u03b9",
+            331
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::normalized",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "\u03ba\u03b1\u1f77",
+            8576
+          ],
+          [
+            "\u1f41",
+            2769
+          ],
+          [
+            "\u03b4\u1f73",
+            2764
+          ],
+          [
+            "\u1f10\u03bd",
+            2684
+          ],
+          [
+            "\u03c4\u03bf\u1fe6",
+            2497
+          ],
+          [
+            "\u03b5\u1f30\u03c2",
+            1755
+          ],
+          [
+            "\u03c4\u1f79",
+            1664
+          ],
+          [
+            "\u03c4\u1f79\u03bd",
+            1562
+          ],
+          [
+            "\u03c4\u1f75\u03bd",
+            1523
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u03bf\u1fe6",
+            1411
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::normalized",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "\u03ba\u03b1\u1f77",
+            8576
+          ],
+          [
+            "\u1f41",
+            2769
+          ],
+          [
+            "\u03b4\u1f73",
+            2764
+          ],
+          [
+            "\u1f10\u03bd",
+            2684
+          ],
+          [
+            "\u03c4\u03bf\u1fe6",
+            2497
+          ],
+          [
+            "\u03b5\u1f30\u03c2",
+            1755
+          ],
+          [
+            "\u03c4\u1f79",
+            1664
+          ],
+          [
+            "\u03c4\u1f79\u03bd",
+            1562
+          ],
+          [
+            "\u03c4\u1f75\u03bd",
+            1523
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u03bf\u1fe6",
+            1411
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::note",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "discontinuous discourse",
+            1
+          ]
+        ],
+        "total": 1,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::note",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "discontinuous discourse",
+            1
+          ]
+        ],
+        "total": 1,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::note",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "discontinuous discourse",
+            1
+          ]
+        ],
+        "total": 1,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::num",
+      "to": "otype::book",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "book",
+        "freq": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            9,
+            1
+          ],
+          [
+            10,
+            1
+          ]
+        ],
+        "total": 27,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::num",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            1,
+            27
+          ],
+          [
+            2,
+            27
+          ],
+          [
+            3,
+            27
+          ],
+          [
+            4,
+            27
+          ],
+          [
+            5,
+            27
+          ],
+          [
+            6,
+            27
+          ],
+          [
+            7,
+            27
+          ],
+          [
+            8,
+            27
+          ],
+          [
+            9,
+            27
+          ],
+          [
+            10,
+            27
+          ]
+        ],
+        "total": 8011,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::num",
+      "to": "otype::group",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "group",
+        "freq": [
+          [
+            1,
+            27
+          ],
+          [
+            2,
+            27
+          ],
+          [
+            3,
+            27
+          ],
+          [
+            4,
+            27
+          ],
+          [
+            5,
+            27
+          ],
+          [
+            6,
+            27
+          ],
+          [
+            7,
+            27
+          ],
+          [
+            8,
+            27
+          ],
+          [
+            9,
+            27
+          ],
+          [
+            10,
+            27
+          ]
+        ],
+        "total": 8945,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::num",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            24,
+            27
+          ],
+          [
+            33,
+            27
+          ],
+          [
+            19,
+            26
+          ],
+          [
+            30,
+            26
+          ],
+          [
+            73,
+            26
+          ],
+          [
+            7,
+            25
+          ],
+          [
+            8,
+            25
+          ],
+          [
+            10,
+            25
+          ],
+          [
+            11,
+            25
+          ],
+          [
+            13,
+            25
+          ]
+        ],
+        "total": 42506,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::num",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            1,
+            88
+          ],
+          [
+            4,
+            72
+          ],
+          [
+            30,
+            71
+          ],
+          [
+            15,
+            69
+          ],
+          [
+            17,
+            69
+          ],
+          [
+            7,
+            68
+          ],
+          [
+            13,
+            68
+          ],
+          [
+            8,
+            67
+          ],
+          [
+            27,
+            67
+          ],
+          [
+            50,
+            67
+          ]
+        ],
+        "total": 106868,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::num",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            1,
+            23
+          ],
+          [
+            234,
+            21
+          ],
+          [
+            75,
+            20
+          ],
+          [
+            79,
+            20
+          ],
+          [
+            129,
+            20
+          ],
+          [
+            147,
+            20
+          ],
+          [
+            155,
+            20
+          ],
+          [
+            235,
+            20
+          ],
+          [
+            77,
+            19
+          ],
+          [
+            89,
+            19
+          ]
+        ],
+        "total": 69007,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::num",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            159,
+            41
+          ],
+          [
+            62,
+            40
+          ],
+          [
+            147,
+            40
+          ],
+          [
+            234,
+            40
+          ],
+          [
+            163,
+            39
+          ],
+          [
+            439,
+            39
+          ],
+          [
+            77,
+            38
+          ],
+          [
+            79,
+            38
+          ],
+          [
+            129,
+            38
+          ],
+          [
+            155,
+            38
+          ]
+        ],
+        "total": 185185,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::num",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            132,
+            32
+          ],
+          [
+            147,
+            31
+          ],
+          [
+            439,
+            31
+          ],
+          [
+            262,
+            30
+          ],
+          [
+            45,
+            29
+          ],
+          [
+            74,
+            29
+          ],
+          [
+            155,
+            29
+          ],
+          [
+            158,
+            29
+          ],
+          [
+            177,
+            29
+          ],
+          [
+            233,
+            29
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::number",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "singular",
+            26293
+          ],
+          [
+            "plural",
+            12967
+          ]
+        ],
+        "total": 39260,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::number",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "singular",
+            69846
+          ],
+          [
+            "plural",
+            29091
+          ]
+        ],
+        "total": 98937,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::number",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "singular",
+            69846
+          ],
+          [
+            "plural",
+            29091
+          ]
+        ],
+        "total": 98937,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::person",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "p3",
+            12474
+          ],
+          [
+            "p2",
+            3447
+          ],
+          [
+            "p1",
+            2886
+          ]
+        ],
+        "total": 18807,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::person",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "p3",
+            12747
+          ],
+          [
+            "p2",
+            3729
+          ],
+          [
+            "p1",
+            2943
+          ]
+        ],
+        "total": 19419,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::person",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "p3",
+            12747
+          ],
+          [
+            "p2",
+            3729
+          ],
+          [
+            "p1",
+            2943
+          ]
+        ],
+        "total": 19419,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::punctuation",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            ",",
+            3903
+          ],
+          [
+            ".",
+            2731
+          ],
+          [
+            "\u00b7",
+            1189
+          ],
+          [
+            ";",
+            589
+          ]
+        ],
+        "total": 8412,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::punctuation",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            ",",
+            9462
+          ],
+          [
+            ".",
+            5717
+          ],
+          [
+            "\u00b7",
+            2359
+          ],
+          [
+            ";",
+            971
+          ]
+        ],
+        "total": 18509,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::punctuation",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            ",",
+            9462
+          ],
+          [
+            ".",
+            5717
+          ],
+          [
+            "\u00b7",
+            2359
+          ],
+          [
+            ";",
+            971
+          ]
+        ],
+        "total": 18509,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::ref",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "1CO 10:1!1",
+            1
+          ],
+          [
+            "1CO 10:1!15",
+            1
+          ],
+          [
+            "1CO 10:1!17",
+            1
+          ],
+          [
+            "1CO 10:1!2",
+            1
+          ],
+          [
+            "1CO 10:1!21",
+            1
+          ],
+          [
+            "1CO 10:1!4",
+            1
+          ],
+          [
+            "1CO 10:1!5",
+            1
+          ],
+          [
+            "1CO 10:10!2",
+            1
+          ],
+          [
+            "1CO 10:10!6",
+            1
+          ],
+          [
+            "1CO 10:10!8",
+            1
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::ref",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "1CO 10:1!1",
+            1
+          ],
+          [
+            "1CO 10:1!10",
+            1
+          ],
+          [
+            "1CO 10:1!11",
+            1
+          ],
+          [
+            "1CO 10:1!12",
+            1
+          ],
+          [
+            "1CO 10:1!13",
+            1
+          ],
+          [
+            "1CO 10:1!14",
+            1
+          ],
+          [
+            "1CO 10:1!15",
+            1
+          ],
+          [
+            "1CO 10:1!16",
+            1
+          ],
+          [
+            "1CO 10:1!17",
+            1
+          ],
+          [
+            "1CO 10:1!18",
+            1
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::ref",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "1CO 10:1!1",
+            1
+          ],
+          [
+            "1CO 10:1!10",
+            1
+          ],
+          [
+            "1CO 10:1!11",
+            1
+          ],
+          [
+            "1CO 10:1!12",
+            1
+          ],
+          [
+            "1CO 10:1!13",
+            1
+          ],
+          [
+            "1CO 10:1!14",
+            1
+          ],
+          [
+            "1CO 10:1!15",
+            1
+          ],
+          [
+            "1CO 10:1!16",
+            1
+          ],
+          [
+            "1CO 10:1!17",
+            1
+          ],
+          [
+            "1CO 10:1!18",
+            1
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::referent",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "n40005001015",
+            45
+          ],
+          [
+            "n43014023002",
+            41
+          ],
+          [
+            "n43013023006 n43013037003 n43014005003 n43014008003 n43014022003",
+            40
+          ],
+          [
+            "n43017001003",
+            36
+          ],
+          [
+            "n46003022002",
+            33
+          ],
+          [
+            "n47010001004",
+            31
+          ],
+          [
+            "n41006030007",
+            29
+          ],
+          [
+            "n47008001004",
+            29
+          ],
+          [
+            "n44021040005",
+            27
+          ],
+          [
+            "n42020034005",
+            26
+          ]
+        ],
+        "total": 7827,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::referent",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "n40005001015",
+            112
+          ],
+          [
+            "n43014023002",
+            79
+          ],
+          [
+            "n46003022002",
+            77
+          ],
+          [
+            "n45001001001",
+            76
+          ],
+          [
+            "n47008001004",
+            73
+          ],
+          [
+            "n50001001001",
+            58
+          ],
+          [
+            "n51001002007",
+            57
+          ],
+          [
+            "n43013023006 n43013037003 n43014005003 n43014008003 n43014022003",
+            54
+          ],
+          [
+            "n41003007003",
+            48
+          ],
+          [
+            "n42020034005",
+            47
+          ]
+        ],
+        "total": 14471,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::referent",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "n40005001015",
+            112
+          ],
+          [
+            "n43014023002",
+            79
+          ],
+          [
+            "n46003022002",
+            77
+          ],
+          [
+            "n45001001001",
+            76
+          ],
+          [
+            "n47008001004",
+            73
+          ],
+          [
+            "n50001001001",
+            58
+          ],
+          [
+            "n51001002007",
+            57
+          ],
+          [
+            "n43013023006 n43013037003 n43014005003 n43014008003 n43014022003",
+            54
+          ],
+          [
+            "n41003007003",
+            48
+          ],
+          [
+            "n42020034005",
+            47
+          ]
+        ],
+        "total": 14471,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::rela",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "Appo",
+            969
+          ]
+        ],
+        "total": 969,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::rela",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "Appo",
+            979
+          ]
+        ],
+        "total": 979,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::rela",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "Appo",
+            10
+          ]
+        ],
+        "total": 10,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::role",
+      "to": "otype::group",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "group",
+        "freq": [
+          [
+            "o",
+            122
+          ],
+          [
+            "s",
+            115
+          ],
+          [
+            "p",
+            36
+          ],
+          [
+            "adv",
+            34
+          ],
+          [
+            "io",
+            16
+          ],
+          [
+            "apposition",
+            10
+          ],
+          [
+            "o2",
+            2
+          ]
+        ],
+        "total": 335,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::role",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "adv",
+            5511
+          ],
+          [
+            "o",
+            4264
+          ],
+          [
+            "apposition",
+            1450
+          ],
+          [
+            "s",
+            855
+          ],
+          [
+            "aux",
+            184
+          ],
+          [
+            "v",
+            176
+          ],
+          [
+            "p",
+            134
+          ],
+          [
+            "o2",
+            128
+          ],
+          [
+            "io",
+            66
+          ],
+          [
+            "topic",
+            23
+          ]
+        ],
+        "total": 12795,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::role",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "adv",
+            15981
+          ],
+          [
+            "o",
+            8822
+          ],
+          [
+            "s",
+            6710
+          ],
+          [
+            "apposition",
+            2429
+          ],
+          [
+            "p",
+            1770
+          ],
+          [
+            "io",
+            702
+          ],
+          [
+            "v",
+            405
+          ],
+          [
+            "aux",
+            351
+          ],
+          [
+            "o2",
+            218
+          ],
+          [
+            "topic",
+            23
+          ]
+        ],
+        "total": 37426,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::role",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "v",
+            24767
+          ],
+          [
+            "adv",
+            16032
+          ],
+          [
+            "s",
+            10198
+          ],
+          [
+            "o",
+            9108
+          ],
+          [
+            "p",
+            3504
+          ],
+          [
+            "vc",
+            2593
+          ],
+          [
+            "io",
+            2576
+          ],
+          [
+            "o2",
+            229
+          ]
+        ],
+        "total": 69007,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::role",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "v",
+            24996
+          ],
+          [
+            "adv",
+            16032
+          ],
+          [
+            "s",
+            10198
+          ],
+          [
+            "o",
+            9108
+          ],
+          [
+            "p",
+            3504
+          ],
+          [
+            "vc",
+            2593
+          ],
+          [
+            "io",
+            2576
+          ],
+          [
+            "apposition",
+            979
+          ],
+          [
+            "aux",
+            872
+          ],
+          [
+            "o2",
+            229
+          ]
+        ],
+        "total": 71088,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::role",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "v",
+            24767
+          ],
+          [
+            "adv",
+            5596
+          ],
+          [
+            "o",
+            4672
+          ],
+          [
+            "s",
+            4458
+          ],
+          [
+            "vc",
+            2583
+          ],
+          [
+            "io",
+            1956
+          ],
+          [
+            "p",
+            1904
+          ],
+          [
+            "aux",
+            705
+          ],
+          [
+            "o2",
+            141
+          ],
+          [
+            "apposition",
+            10
+          ]
+        ],
+        "total": 46792,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::rule",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            "Conj-CL",
+            5424
+          ],
+          [
+            "CLaCL",
+            395
+          ],
+          [
+            "ClCl",
+            223
+          ],
+          [
+            "ClCl2",
+            102
+          ],
+          [
+            "PtclCL",
+            84
+          ],
+          [
+            "V-O",
+            51
+          ],
+          [
+            "sub-CL",
+            47
+          ],
+          [
+            "ADV-V",
+            37
+          ],
+          [
+            "ADV-V-O",
+            33
+          ],
+          [
+            "S-P",
+            29
+          ]
+        ],
+        "total": 7173,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::rule",
+      "to": "otype::group",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "group",
+        "freq": [
+          [
+            "NP-CL",
+            856
+          ],
+          [
+            "CL-NP",
+            14
+          ]
+        ],
+        "total": 870,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::rule",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "CLaCL",
+            3434
+          ],
+          [
+            "sub-CL",
+            2982
+          ],
+          [
+            "V2CL",
+            2842
+          ],
+          [
+            "V-O",
+            2674
+          ],
+          [
+            "DetCL",
+            2011
+          ],
+          [
+            "V-ADV",
+            1675
+          ],
+          [
+            "ClCl",
+            1356
+          ],
+          [
+            "ADV-V",
+            1100
+          ],
+          [
+            "O-V",
+            1064
+          ],
+          [
+            "that-VP",
+            888
+          ]
+        ],
+        "total": 37786,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::rule",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "DetNP",
+            15696
+          ],
+          [
+            "PrepNp",
+            11044
+          ],
+          [
+            "NPofNP",
+            6819
+          ],
+          [
+            "Conj-CL",
+            5576
+          ],
+          [
+            "CLaCL",
+            3829
+          ],
+          [
+            "sub-CL",
+            3029
+          ],
+          [
+            "V2CL",
+            2843
+          ],
+          [
+            "V-O",
+            2725
+          ],
+          [
+            "DetCL",
+            2011
+          ],
+          [
+            "Np-Appos",
+            1908
+          ]
+        ],
+        "total": 93234,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::rule",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "PrepNp",
+            9512
+          ],
+          [
+            "DetNP",
+            6507
+          ],
+          [
+            "NPofNP",
+            789
+          ],
+          [
+            "Np-Appos",
+            715
+          ],
+          [
+            "NpaNp",
+            697
+          ],
+          [
+            "NpAdjp",
+            634
+          ],
+          [
+            "AdvpNp",
+            520
+          ],
+          [
+            "DetAdj",
+            470
+          ],
+          [
+            "AdjpNp",
+            455
+          ],
+          [
+            "All-NP",
+            412
+          ]
+        ],
+        "total": 22930,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::rule",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "DetNP",
+            15696
+          ],
+          [
+            "PrepNp",
+            11044
+          ],
+          [
+            "NPofNP",
+            6819
+          ],
+          [
+            "Np-Appos",
+            1846
+          ],
+          [
+            "NpAdjp",
+            1371
+          ],
+          [
+            "AdjpNp",
+            1368
+          ],
+          [
+            "NpaNp",
+            1351
+          ],
+          [
+            "DetAdj",
+            1282
+          ],
+          [
+            "All-NP",
+            846
+          ],
+          [
+            "NpPp",
+            676
+          ]
+        ],
+        "total": 47405,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::sp",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "verb",
+            27355
+          ],
+          [
+            "pron",
+            8751
+          ],
+          [
+            "advb",
+            4384
+          ],
+          [
+            "subs",
+            2822
+          ],
+          [
+            "adjv",
+            2304
+          ],
+          [
+            "art",
+            257
+          ],
+          [
+            "intj",
+            90
+          ],
+          [
+            "conj",
+            85
+          ],
+          [
+            "num",
+            25
+          ],
+          [
+            "prep",
+            4
+          ]
+        ],
+        "total": 46077,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::sp",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "subs",
+            28455
+          ],
+          [
+            "verb",
+            28357
+          ],
+          [
+            "art",
+            19786
+          ],
+          [
+            "conj",
+            18227
+          ],
+          [
+            "pron",
+            16177
+          ],
+          [
+            "prep",
+            10914
+          ],
+          [
+            "adjv",
+            8452
+          ],
+          [
+            "advb",
+            6147
+          ],
+          [
+            "intj",
+            788
+          ],
+          [
+            "num",
+            476
+          ]
+        ],
+        "total": 137779,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::sp",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "subs",
+            28455
+          ],
+          [
+            "verb",
+            28357
+          ],
+          [
+            "art",
+            19786
+          ],
+          [
+            "conj",
+            18227
+          ],
+          [
+            "pron",
+            16177
+          ],
+          [
+            "prep",
+            10914
+          ],
+          [
+            "adjv",
+            8452
+          ],
+          [
+            "advb",
+            6147
+          ],
+          [
+            "intj",
+            788
+          ],
+          [
+            "num",
+            476
+          ]
+        ],
+        "total": 137779,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::strong",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            846,
+            2839
+          ],
+          [
+            3004,
+            2252
+          ],
+          [
+            1510,
+            2251
+          ],
+          [
+            4771,
+            1468
+          ],
+          [
+            1473,
+            1247
+          ],
+          [
+            3756,
+            1182
+          ],
+          [
+            3739,
+            1111
+          ],
+          [
+            3361,
+            779
+          ],
+          [
+            2192,
+            707
+          ],
+          [
+            1096,
+            663
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::strong",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            3588,
+            19783
+          ],
+          [
+            2532,
+            8978
+          ],
+          [
+            846,
+            5561
+          ],
+          [
+            4771,
+            2892
+          ],
+          [
+            1161,
+            2787
+          ],
+          [
+            1722,
+            2743
+          ],
+          [
+            1473,
+            2567
+          ],
+          [
+            1510,
+            2457
+          ],
+          [
+            3004,
+            2255
+          ],
+          [
+            1519,
+            1766
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::strong",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            3588,
+            19783
+          ],
+          [
+            2532,
+            8978
+          ],
+          [
+            846,
+            5561
+          ],
+          [
+            4771,
+            2892
+          ],
+          [
+            1161,
+            2787
+          ],
+          [
+            1722,
+            2743
+          ],
+          [
+            1473,
+            2567
+          ],
+          [
+            1510,
+            2457
+          ],
+          [
+            3004,
+            2255
+          ],
+          [
+            1519,
+            1766
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::subjrefspec",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "n46003022002",
+            172
+          ],
+          [
+            "n66001009002",
+            129
+          ],
+          [
+            "n45001001001",
+            102
+          ],
+          [
+            "n47010001004",
+            100
+          ],
+          [
+            "n41006030007",
+            95
+          ],
+          [
+            "n50001001001",
+            90
+          ],
+          [
+            "n40005001015",
+            76
+          ],
+          [
+            "n49003001013",
+            69
+          ],
+          [
+            "n51001002007",
+            64
+          ],
+          [
+            "n48001001001",
+            62
+          ]
+        ],
+        "total": 16008,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::subjrefspec",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "n46003022002",
+            172
+          ],
+          [
+            "n66001009002",
+            131
+          ],
+          [
+            "n45001001001",
+            104
+          ],
+          [
+            "n47010001004",
+            104
+          ],
+          [
+            "n41006030007",
+            95
+          ],
+          [
+            "n50001001001",
+            92
+          ],
+          [
+            "n40005001015",
+            78
+          ],
+          [
+            "n49003001013",
+            73
+          ],
+          [
+            "n51001002007",
+            71
+          ],
+          [
+            "n48001001001",
+            66
+          ]
+        ],
+        "total": 16575,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::subjrefspec",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "n46003022002",
+            172
+          ],
+          [
+            "n66001009002",
+            131
+          ],
+          [
+            "n45001001001",
+            104
+          ],
+          [
+            "n47010001004",
+            104
+          ],
+          [
+            "n41006030007",
+            95
+          ],
+          [
+            "n50001001001",
+            92
+          ],
+          [
+            "n40005001015",
+            78
+          ],
+          [
+            "n49003001013",
+            73
+          ],
+          [
+            "n51001002007",
+            71
+          ],
+          [
+            "n48001001001",
+            66
+          ]
+        ],
+        "total": 16575,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::tense",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "aorist",
+            11503
+          ],
+          [
+            "present",
+            11175
+          ],
+          [
+            "future",
+            1592
+          ],
+          [
+            "imperfect",
+            1547
+          ],
+          [
+            "perfect",
+            1450
+          ],
+          [
+            "pluperfect",
+            88
+          ]
+        ],
+        "total": 27355,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::tense",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "aorist",
+            11803
+          ],
+          [
+            "present",
+            11579
+          ],
+          [
+            "imperfect",
+            1689
+          ],
+          [
+            "future",
+            1626
+          ],
+          [
+            "perfect",
+            1572
+          ],
+          [
+            "pluperfect",
+            88
+          ]
+        ],
+        "total": 28357,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::tense",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "aorist",
+            11803
+          ],
+          [
+            "present",
+            11579
+          ],
+          [
+            "imperfect",
+            1689
+          ],
+          [
+            "future",
+            1626
+          ],
+          [
+            "perfect",
+            1572
+          ],
+          [
+            "pluperfect",
+            88
+          ]
+        ],
+        "total": 28357,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::text",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "\u03b1\u1f50\u03c4\u1ff7",
+            710
+          ],
+          [
+            "\u03bc\u1f74",
+            669
+          ],
+          [
+            "\u03bf\u1f50\u03ba",
+            660
+          ],
+          [
+            "\u03b5\u1f36\u03c0\u03b5\u03bd",
+            570
+          ],
+          [
+            "\u1f10\u03c3\u03c4\u03b9\u03bd",
+            556
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u1f78\u03bd",
+            531
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u03bf\u1fd6\u03c2",
+            491
+          ],
+          [
+            "\u1f51\u03bc\u1fd6\u03bd",
+            475
+          ],
+          [
+            "\u03bf\u1f50",
+            378
+          ],
+          [
+            "\u03bb\u1f73\u03b3\u03b5\u03b9",
+            331
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::text",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "\u03ba\u03b1\u1f76",
+            8545
+          ],
+          [
+            "\u1f41",
+            2769
+          ],
+          [
+            "\u1f10\u03bd",
+            2684
+          ],
+          [
+            "\u03b4\u1f72",
+            2620
+          ],
+          [
+            "\u03c4\u03bf\u1fe6",
+            2497
+          ],
+          [
+            "\u03b5\u1f30\u03c2",
+            1755
+          ],
+          [
+            "\u03c4\u1f78",
+            1658
+          ],
+          [
+            "\u03c4\u1f78\u03bd",
+            1556
+          ],
+          [
+            "\u03c4\u1f74\u03bd",
+            1518
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u03bf\u1fe6",
+            1411
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::text",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "\u03ba\u03b1\u1f76",
+            8545
+          ],
+          [
+            "\u1f41",
+            2769
+          ],
+          [
+            "\u1f10\u03bd",
+            2684
+          ],
+          [
+            "\u03b4\u1f72",
+            2620
+          ],
+          [
+            "\u03c4\u03bf\u1fe6",
+            2497
+          ],
+          [
+            "\u03b5\u1f30\u03c2",
+            1755
+          ],
+          [
+            "\u03c4\u1f78",
+            1658
+          ],
+          [
+            "\u03c4\u1f78\u03bd",
+            1556
+          ],
+          [
+            "\u03c4\u1f74\u03bd",
+            1518
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u03bf\u1fe6",
+            1411
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::trailer",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            " ",
+            37665
+          ],
+          [
+            ", ",
+            3903
+          ],
+          [
+            ". ",
+            2731
+          ],
+          [
+            "\u00b7 ",
+            1189
+          ],
+          [
+            "; ",
+            589
+          ]
+        ],
+        "total": 46077,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::trailer",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            " ",
+            119270
+          ],
+          [
+            ", ",
+            9462
+          ],
+          [
+            ". ",
+            5717
+          ],
+          [
+            "\u00b7 ",
+            2359
+          ],
+          [
+            "; ",
+            971
+          ]
+        ],
+        "total": 137779,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::trailer",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            " ",
+            119270
+          ],
+          [
+            ", ",
+            9462
+          ],
+          [
+            ". ",
+            5717
+          ],
+          [
+            "\u00b7 ",
+            2359
+          ],
+          [
+            "; ",
+            971
+          ]
+        ],
+        "total": 137779,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::trans",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "not",
+            1619
+          ],
+          [
+            "you",
+            667
+          ],
+          [
+            "is",
+            578
+          ],
+          [
+            "Him",
+            535
+          ],
+          [
+            "to you",
+            453
+          ],
+          [
+            "him",
+            406
+          ],
+          [
+            "them",
+            394
+          ],
+          [
+            "saying",
+            391
+          ],
+          [
+            "to them",
+            373
+          ],
+          [
+            "said",
+            312
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::trans",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "the",
+            9857
+          ],
+          [
+            "and",
+            6212
+          ],
+          [
+            "-",
+            5496
+          ],
+          [
+            "in",
+            2320
+          ],
+          [
+            "And",
+            2218
+          ],
+          [
+            "not",
+            2042
+          ],
+          [
+            "of the",
+            1551
+          ],
+          [
+            "for",
+            1501
+          ],
+          [
+            "that",
+            1498
+          ],
+          [
+            "you",
+            1226
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::trans",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "the",
+            9857
+          ],
+          [
+            "and",
+            6212
+          ],
+          [
+            "-",
+            5496
+          ],
+          [
+            "in",
+            2320
+          ],
+          [
+            "And",
+            2218
+          ],
+          [
+            "not",
+            2042
+          ],
+          [
+            "of the",
+            1551
+          ],
+          [
+            "for",
+            1501
+          ],
+          [
+            "that",
+            1498
+          ],
+          [
+            "you",
+            1226
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::translit",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "me",
+            976
+          ],
+          [
+            "estin",
+            865
+          ],
+          [
+            "auton",
+            815
+          ],
+          [
+            "auto",
+            768
+          ],
+          [
+            "ouk",
+            660
+          ],
+          [
+            "eipen",
+            586
+          ],
+          [
+            "autois",
+            491
+          ],
+          [
+            "umin",
+            475
+          ],
+          [
+            "ou",
+            467
+          ],
+          [
+            "o",
+            446
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::translit",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "kai",
+            8576
+          ],
+          [
+            "en",
+            3152
+          ],
+          [
+            "o",
+            3149
+          ],
+          [
+            "to",
+            2885
+          ],
+          [
+            "de",
+            2769
+          ],
+          [
+            "ton",
+            2763
+          ],
+          [
+            "tou",
+            2497
+          ],
+          [
+            "eis",
+            1851
+          ],
+          [
+            "ten",
+            1523
+          ],
+          [
+            "auton",
+            1514
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::translit",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "kai",
+            8576
+          ],
+          [
+            "en",
+            3152
+          ],
+          [
+            "o",
+            3149
+          ],
+          [
+            "to",
+            2885
+          ],
+          [
+            "de",
+            2769
+          ],
+          [
+            "ton",
+            2763
+          ],
+          [
+            "tou",
+            2497
+          ],
+          [
+            "eis",
+            1851
+          ],
+          [
+            "ten",
+            1523
+          ],
+          [
+            "auton",
+            1514
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::typ",
+      "to": "otype::group",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "group",
+        "freq": [
+          [
+            "conjuncted",
+            8075
+          ],
+          [
+            "apposition",
+            870
+          ]
+        ],
+        "total": 8945,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::typ",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "Voct",
+            167
+          ]
+        ],
+        "total": 167,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::typ",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "NP",
+            30911
+          ],
+          [
+            "PP",
+            11169
+          ],
+          [
+            "conjuncted",
+            8075
+          ],
+          [
+            "apposition",
+            870
+          ],
+          [
+            "VP",
+            207
+          ],
+          [
+            "AdjP",
+            168
+          ],
+          [
+            "Voct",
+            167
+          ],
+          [
+            "AdvP",
+            166
+          ]
+        ],
+        "total": 51733,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::typ",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "NP",
+            10935
+          ],
+          [
+            "PP",
+            9609
+          ],
+          [
+            "AdvP",
+            154
+          ],
+          [
+            "AdjP",
+            60
+          ],
+          [
+            "VP",
+            10
+          ]
+        ],
+        "total": 20768,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::typ",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "NP",
+            30911
+          ],
+          [
+            "PP",
+            11169
+          ],
+          [
+            "VP",
+            207
+          ],
+          [
+            "AdjP",
+            168
+          ],
+          [
+            "AdvP",
+            166
+          ]
+        ],
+        "total": 42621,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::typems",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            "wrapper-clause-scope",
+            5571
+          ],
+          [
+            "group",
+            375
+          ]
+        ],
+        "total": 5946,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::typems",
+      "to": "otype::group",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "group",
+        "freq": [
+          [
+            "conjuncted-wg",
+            8075
+          ],
+          [
+            "apposition-group",
+            870
+          ]
+        ],
+        "total": 8945,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::typems",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "wrapper-clause-scope",
+            6595
+          ],
+          [
+            "group",
+            2257
+          ],
+          [
+            "apposition-group",
+            21
+          ]
+        ],
+        "total": 8873,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::typems",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "modifier-scope",
+            29645
+          ],
+          [
+            "wrapper-clause-scope",
+            12166
+          ],
+          [
+            "wrapper-scope",
+            11264
+          ],
+          [
+            "conjuncted-wg",
+            8075
+          ],
+          [
+            "group",
+            4957
+          ],
+          [
+            "modifier-clause-scope",
+            1712
+          ],
+          [
+            "apposition-group",
+            891
+          ]
+        ],
+        "total": 68710,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::typems",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "modifier-scope",
+            10484
+          ],
+          [
+            "wrapper-scope",
+            9535
+          ],
+          [
+            "personal",
+            5885
+          ],
+          [
+            "common",
+            2120
+          ],
+          [
+            "relative",
+            1364
+          ],
+          [
+            "group",
+            952
+          ],
+          [
+            "modifier-clause-scope",
+            755
+          ],
+          [
+            "demonstrative",
+            744
+          ],
+          [
+            "proper",
+            683
+          ],
+          [
+            "interrogative",
+            480
+          ]
+        ],
+        "total": 33293,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::typems",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "modifier-scope",
+            29645
+          ],
+          [
+            "common",
+            23644
+          ],
+          [
+            "personal",
+            11521
+          ],
+          [
+            "wrapper-scope",
+            11264
+          ],
+          [
+            "proper",
+            4639
+          ],
+          [
+            "group",
+            2325
+          ],
+          [
+            "demonstrative",
+            1722
+          ],
+          [
+            "modifier-clause-scope",
+            1712
+          ],
+          [
+            "relative",
+            1674
+          ],
+          [
+            "interrogative",
+            633
+          ]
+        ],
+        "total": 89404,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::typems",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "common",
+            23644
+          ],
+          [
+            "personal",
+            11521
+          ],
+          [
+            "proper",
+            4639
+          ],
+          [
+            "demonstrative",
+            1722
+          ],
+          [
+            "relative",
+            1674
+          ],
+          [
+            "interrogative",
+            633
+          ],
+          [
+            "indefinite",
+            552
+          ],
+          [
+            "possessive",
+            70
+          ],
+          [
+            "adverbial",
+            3
+          ]
+        ],
+        "total": 44458,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::unaccent",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "\u03b5\u03c3\u03c4\u03b9\u03bd",
+            865
+          ],
+          [
+            "\u03b1\u03c5\u03c4\u03bf\u03bd",
+            748
+          ],
+          [
+            "\u03bc\u03b7",
+            717
+          ],
+          [
+            "\u03b1\u03c5\u03c4\u03c9",
+            711
+          ],
+          [
+            "\u03bf\u03c5\u03ba",
+            660
+          ],
+          [
+            "\u03b5\u03b9\u03c0\u03b5\u03bd",
+            586
+          ],
+          [
+            "\u03b1\u03c5\u03c4\u03bf\u03b9\u03c2",
+            491
+          ],
+          [
+            "\u03c5\u03bc\u03b9\u03bd",
+            475
+          ],
+          [
+            "\u03bf\u03c5",
+            467
+          ],
+          [
+            "\u03bf",
+            372
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::unaccent",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "\u03ba\u03b1\u03b9",
+            8576
+          ],
+          [
+            "\u03bf",
+            3019
+          ],
+          [
+            "\u03b4\u03b5",
+            2764
+          ],
+          [
+            "\u03b5\u03bd",
+            2752
+          ],
+          [
+            "\u03c4\u03bf\u03c5",
+            2497
+          ],
+          [
+            "\u03b5\u03b9\u03c2",
+            1851
+          ],
+          [
+            "\u03c4\u03bf",
+            1664
+          ],
+          [
+            "\u03c4\u03bf\u03bd",
+            1562
+          ],
+          [
+            "\u03c4\u03b7\u03bd",
+            1523
+          ],
+          [
+            "\u03b1\u03c5\u03c4\u03bf\u03c5",
+            1411
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::unaccent",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "\u03ba\u03b1\u03b9",
+            8576
+          ],
+          [
+            "\u03bf",
+            3019
+          ],
+          [
+            "\u03b4\u03b5",
+            2764
+          ],
+          [
+            "\u03b5\u03bd",
+            2752
+          ],
+          [
+            "\u03c4\u03bf\u03c5",
+            2497
+          ],
+          [
+            "\u03b5\u03b9\u03c2",
+            1851
+          ],
+          [
+            "\u03c4\u03bf",
+            1664
+          ],
+          [
+            "\u03c4\u03bf\u03bd",
+            1562
+          ],
+          [
+            "\u03c4\u03b7\u03bd",
+            1523
+          ],
+          [
+            "\u03b1\u03c5\u03c4\u03bf\u03c5",
+            1411
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::unicode",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "\u03bc\u1f74",
+            669
+          ],
+          [
+            "\u03bf\u1f50\u03ba",
+            660
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u1ff7",
+            602
+          ],
+          [
+            "\u03b5\u1f36\u03c0\u03b5\u03bd",
+            560
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u1f78\u03bd",
+            519
+          ],
+          [
+            "\u03b1\u1f50\u03c4\u03bf\u1fd6\u03c2",
+            420
+          ],
+          [
+            "\u1f10\u03c3\u03c4\u03b9\u03bd",
+            383
+          ],
+          [
+            "\u03bf\u1f50",
+            378
+          ],
+          [
+            "\u03bb\u1f73\u03b3\u03b5\u03b9",
+            318
+          ],
+          [
+            "\u1f51\u03bc\u1fd6\u03bd",
+            283
+          ]
+        ],
+        "total": 46077,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::unicode",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "\u03ba\u03b1\u1f76",
+            8541
+          ],
+          [
+            "\u1f41",
+            2768
+          ],
+          [
+            "\u1f10\u03bd",
+            2683
+          ],
+          [
+            "\u03b4\u1f72",
+            2619
+          ],
+          [
+            "\u03c4\u03bf\u1fe6",
+            2497
+          ],
+          [
+            "\u03b5\u1f30\u03c2",
+            1755
+          ],
+          [
+            "\u03c4\u1f78",
+            1657
+          ],
+          [
+            "\u03c4\u1f78\u03bd",
+            1556
+          ],
+          [
+            "\u03c4\u1f74\u03bd",
+            1518
+          ],
+          [
+            "\u03c4\u1fc6\u03c2",
+            1300
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::unicode",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "\u03ba\u03b1\u1f76",
+            8541
+          ],
+          [
+            "\u1f41",
+            2768
+          ],
+          [
+            "\u1f10\u03bd",
+            2683
+          ],
+          [
+            "\u03b4\u1f72",
+            2619
+          ],
+          [
+            "\u03c4\u03bf\u1fe6",
+            2497
+          ],
+          [
+            "\u03b5\u1f30\u03c2",
+            1755
+          ],
+          [
+            "\u03c4\u1f78",
+            1657
+          ],
+          [
+            "\u03c4\u1f78\u03bd",
+            1556
+          ],
+          [
+            "\u03c4\u1f74\u03bd",
+            1518
+          ],
+          [
+            "\u03c4\u1fc6\u03c2",
+            1300
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::variant",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "2",
+            17
+          ],
+          [
+            "1",
+            10
+          ]
+        ],
+        "total": 27,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::variant",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "2",
+            151
+          ],
+          [
+            "1",
+            18
+          ]
+        ],
+        "total": 169,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::variant",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "2",
+            151
+          ],
+          [
+            "1",
+            18
+          ]
+        ],
+        "total": 169,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::verse",
+      "to": "otype::verse",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "verse",
+        "freq": [
+          [
+            1,
+            261
+          ],
+          [
+            2,
+            260
+          ],
+          [
+            3,
+            260
+          ],
+          [
+            4,
+            260
+          ],
+          [
+            5,
+            260
+          ],
+          [
+            6,
+            260
+          ],
+          [
+            8,
+            260
+          ],
+          [
+            7,
+            259
+          ],
+          [
+            9,
+            259
+          ],
+          [
+            10,
+            259
+          ]
+        ],
+        "total": 7944,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::verse",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            1,
+            298
+          ],
+          [
+            7,
+            270
+          ],
+          [
+            12,
+            267
+          ],
+          [
+            9,
+            264
+          ],
+          [
+            13,
+            260
+          ],
+          [
+            11,
+            256
+          ],
+          [
+            5,
+            255
+          ],
+          [
+            8,
+            254
+          ],
+          [
+            6,
+            252
+          ],
+          [
+            10,
+            252
+          ]
+        ],
+        "total": 8011,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::verse",
+      "to": "otype::group",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "group",
+        "freq": [
+          [
+            12,
+            345
+          ],
+          [
+            9,
+            323
+          ],
+          [
+            4,
+            319
+          ],
+          [
+            10,
+            318
+          ],
+          [
+            2,
+            316
+          ],
+          [
+            8,
+            313
+          ],
+          [
+            11,
+            311
+          ],
+          [
+            3,
+            299
+          ],
+          [
+            13,
+            291
+          ],
+          [
+            15,
+            291
+          ]
+        ],
+        "total": 8945,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::verse",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            10,
+            1424
+          ],
+          [
+            12,
+            1424
+          ],
+          [
+            9,
+            1393
+          ],
+          [
+            4,
+            1386
+          ],
+          [
+            8,
+            1384
+          ],
+          [
+            7,
+            1381
+          ],
+          [
+            6,
+            1372
+          ],
+          [
+            11,
+            1358
+          ],
+          [
+            15,
+            1346
+          ],
+          [
+            3,
+            1344
+          ]
+        ],
+        "total": 42506,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::verse",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            12,
+            3666
+          ],
+          [
+            10,
+            3636
+          ],
+          [
+            1,
+            3632
+          ],
+          [
+            3,
+            3558
+          ],
+          [
+            4,
+            3533
+          ],
+          [
+            9,
+            3531
+          ],
+          [
+            2,
+            3517
+          ],
+          [
+            5,
+            3480
+          ],
+          [
+            8,
+            3480
+          ],
+          [
+            13,
+            3469
+          ]
+        ],
+        "total": 106868,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::verse",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            10,
+            2295
+          ],
+          [
+            9,
+            2268
+          ],
+          [
+            12,
+            2258
+          ],
+          [
+            7,
+            2244
+          ],
+          [
+            4,
+            2223
+          ],
+          [
+            11,
+            2222
+          ],
+          [
+            6,
+            2217
+          ],
+          [
+            8,
+            2213
+          ],
+          [
+            5,
+            2171
+          ],
+          [
+            13,
+            2161
+          ]
+        ],
+        "total": 69007,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::verse",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            1,
+            6496
+          ],
+          [
+            10,
+            6311
+          ],
+          [
+            12,
+            6285
+          ],
+          [
+            3,
+            6181
+          ],
+          [
+            2,
+            6150
+          ],
+          [
+            4,
+            6144
+          ],
+          [
+            5,
+            6136
+          ],
+          [
+            9,
+            6092
+          ],
+          [
+            13,
+            6070
+          ],
+          [
+            11,
+            6014
+          ]
+        ],
+        "total": 185185,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::verse",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            10,
+            4669
+          ],
+          [
+            12,
+            4655
+          ],
+          [
+            9,
+            4541
+          ],
+          [
+            4,
+            4540
+          ],
+          [
+            1,
+            4533
+          ],
+          [
+            3,
+            4508
+          ],
+          [
+            5,
+            4497
+          ],
+          [
+            11,
+            4478
+          ],
+          [
+            8,
+            4467
+          ],
+          [
+            2,
+            4463
+          ]
+        ],
+        "total": 137779,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::voice",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "active",
+            20154
+          ],
+          [
+            "passive",
+            3345
+          ],
+          [
+            "middle",
+            2187
+          ],
+          [
+            "middlepassive",
+            1669
+          ]
+        ],
+        "total": 27355,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::voice",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "active",
+            20742
+          ],
+          [
+            "passive",
+            3493
+          ],
+          [
+            "middle",
+            2408
+          ],
+          [
+            "middlepassive",
+            1714
+          ]
+        ],
+        "total": 28357,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::voice",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "active",
+            20742
+          ],
+          [
+            "passive",
+            3493
+          ],
+          [
+            "middle",
+            2408
+          ],
+          [
+            "middlepassive",
+            1714
+          ]
+        ],
+        "total": 28357,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::frame",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "A0",
+            25654
+          ],
+          [
+            "A1",
+            15570
+          ],
+          [
+            "A2",
+            2577
+          ],
+          [
+            "AA2",
+            92
+          ]
+        ],
+        "total": 43893,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::parent",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            "Link",
+            8011
+          ]
+        ],
+        "total": 8011,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::parent",
+      "to": "otype::group",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "group",
+        "freq": [
+          [
+            "Link",
+            8945
+          ]
+        ],
+        "total": 8945,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::parent",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            "Link",
+            42506
+          ]
+        ],
+        "total": 42506,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::parent",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            "Link",
+            106867
+          ]
+        ],
+        "total": 106867,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::parent",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            "Link",
+            69007
+          ]
+        ],
+        "total": 69007,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::parent",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            "Link",
+            69007
+          ]
+        ],
+        "total": 69007,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::parent",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "Link",
+            551116
+          ]
+        ],
+        "total": 551116,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::sibling",
+      "to": "otype::sentence",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "sentence",
+        "freq": [
+          [
+            1,
+            7984
+          ],
+          [
+            2,
+            7957
+          ],
+          [
+            3,
+            7930
+          ],
+          [
+            4,
+            7903
+          ],
+          [
+            5,
+            7876
+          ],
+          [
+            6,
+            7849
+          ],
+          [
+            7,
+            7822
+          ],
+          [
+            8,
+            7795
+          ],
+          [
+            9,
+            7768
+          ],
+          [
+            10,
+            7741
+          ]
+        ],
+        "total": 2965295,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::sibling",
+      "to": "otype::group",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "group",
+        "freq": [
+          [
+            1,
+            1420
+          ],
+          [
+            2,
+            401
+          ],
+          [
+            3,
+            187
+          ],
+          [
+            4,
+            102
+          ],
+          [
+            5,
+            60
+          ],
+          [
+            6,
+            36
+          ],
+          [
+            7,
+            25
+          ],
+          [
+            8,
+            18
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            10,
+            8
+          ]
+        ],
+        "total": 2275,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::sibling",
+      "to": "otype::clause",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "clause",
+        "freq": [
+          [
+            1,
+            12269
+          ],
+          [
+            2,
+            4249
+          ],
+          [
+            3,
+            1825
+          ],
+          [
+            4,
+            663
+          ],
+          [
+            5,
+            185
+          ],
+          [
+            6,
+            67
+          ],
+          [
+            7,
+            28
+          ],
+          [
+            8,
+            18
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            7
+          ]
+        ],
+        "total": 19329,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::sibling",
+      "to": "otype::wg",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "wg",
+        "freq": [
+          [
+            1,
+            38317
+          ],
+          [
+            2,
+            18925
+          ],
+          [
+            3,
+            12374
+          ],
+          [
+            4,
+            9361
+          ],
+          [
+            5,
+            8297
+          ],
+          [
+            6,
+            8010
+          ],
+          [
+            7,
+            7902
+          ],
+          [
+            8,
+            7848
+          ],
+          [
+            9,
+            7806
+          ],
+          [
+            10,
+            7768
+          ]
+        ],
+        "total": 3013346,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::sibling",
+      "to": "otype::phrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "phrase",
+        "freq": [
+          [
+            1,
+            12438
+          ],
+          [
+            2,
+            5882
+          ],
+          [
+            3,
+            2294
+          ],
+          [
+            4,
+            630
+          ],
+          [
+            5,
+            138
+          ],
+          [
+            6,
+            28
+          ],
+          [
+            7,
+            5
+          ]
+        ],
+        "total": 21415,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::sibling",
+      "to": "otype::subphrase",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "subphrase",
+        "freq": [
+          [
+            1,
+            12438
+          ],
+          [
+            2,
+            5882
+          ],
+          [
+            3,
+            2294
+          ],
+          [
+            4,
+            630
+          ],
+          [
+            5,
+            138
+          ],
+          [
+            6,
+            28
+          ],
+          [
+            7,
+            5
+          ]
+        ],
+        "total": 21415,
+        "truncated": false
+      }
+    },
+    {
+      "from": "feature::sibling",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            1,
+            139060
+          ],
+          [
+            2,
+            27543
+          ],
+          [
+            3,
+            9270
+          ],
+          [
+            4,
+            2117
+          ],
+          [
+            5,
+            476
+          ],
+          [
+            6,
+            142
+          ],
+          [
+            7,
+            56
+          ],
+          [
+            8,
+            27
+          ],
+          [
+            9,
+            17
+          ],
+          [
+            10,
+            13
+          ]
+        ],
+        "total": 178751,
+        "truncated": true
+      }
+    },
+    {
+      "from": "feature::subjref",
+      "to": "otype::word",
+      "relation": "valid on",
+      "freqDetail": {
+        "nodetype": "word",
+        "freq": [
+          [
+            "Link",
+            37748
+          ]
+        ],
+        "total": 37748,
+        "truncated": false
+      }
+    }
+  ]
+}
