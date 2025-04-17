@@ -9,7 +9,7 @@ This repository contains the following Jupyter Notebooks that can be used to cre
 
 # The end result
 
-The following screenshot shows the generated visual presentation of the Knowledge Graph for the [N1904-TF dataset](https://github.com/CenterBLC/N1904). Click on the image to open the interactive view.
+The following screenshot shows the generated visual presentation of the Knowledge Graph for the [N1904-TF dataset](https://centerblc.github.io/N1904/). Click on the image to open the interactive view.
 
 <a href="https://tonyjurg.github.io/TF_Knowledge_Graph/n1904_graph_contextmenu.html" target="_blank"><img src="visualized_knowledge_graph.png"></a>
 
