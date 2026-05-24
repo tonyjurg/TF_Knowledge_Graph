@@ -39,7 +39,7 @@
 
       document.addEventListener("DOMContentLoaded", async () => {
         renderMermaidBlocks();
-        mermaid.initialize({ startOnLoad: false });
+        mermaid.initialize({ startOnLoad: false, securityLevel: "loose" });
         await mermaid.run({ querySelector: ".mermaid" });
       });
     </script>
