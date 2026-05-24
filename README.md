@@ -23,6 +23,13 @@ flowchart LR
     
     JSON -.-> GPT[Custom GPT Grounding]
     HTML --> Human[Interactive Visualization]
+
+    click NB1 "https://github.com/tonyjurg/TF_Knowledge_Graph/blob/main/create_knowledge_graph.ipynb" "Open notebook: create_knowledge_graph.ipynb"
+    click NB2 "https://github.com/tonyjurg/TF_Knowledge_Graph/blob/main/generate_cytoscape_html.ipynb" "Open notebook: generate_cytoscape_html.ipynb"
+    click JSON "https://tonyjurg.github.io/TF_Knowledge_Graph/n1904_knowledge_graph.json" "Open JSON output"
+    click HTML "https://tonyjurg.github.io/TF_Knowledge_Graph/n1904_graph_contextmenu.html" "Open interactive HTML graph"
+    click POS "https://tonyjurg.github.io/TF_Knowledge_Graph/node_positions.json" "Open node positions JSON"
+    click TF "https://centerblc.github.io/N1904/" "Open Text-Fabric N1904 dataset"
 ```
 
 # The end result
@@ -30,4 +37,3 @@ flowchart LR
 The following screenshot shows the generated visual presentation of the Knowledge Graph for the [N1904-TF dataset](https://centerblc.github.io/N1904/). Click on the image to open the interactive view.
 
 <a href="https://tonyjurg.github.io/TF_Knowledge_Graph/n1904_graph_contextmenu.html" target="_blank"><img src="visualized_knowledge_graph.png"></a>
-
