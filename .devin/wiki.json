@@ -1,0 +1,163 @@
+{
+  "repo_notes": [
+    {
+      "content": ""
+    }
+  ],
+  "pages": [
+    {
+      "title": "Overview",
+      "purpose": "High-level introduction to the TF Knowledge Graph project: its purpose, the N1904 dataset it targets, the two-phase pipeline, and the outputs it produces. Links to child pages for setup and architecture details.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "purpose": "Step-by-step guide for setting up the environment, installing dependencies (Text-Fabric, Jupyter), cloning the repository, and running the two notebooks end-to-end. Covers the .gitignore conventions and project layout.",
+      "parent": "Overview",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Pipeline Architecture",
+      "purpose": "Explains the overall two-phase data flow from the Text-Fabric N1904 dataset through JSON extraction to interactive HTML visualization. Describes the Mermaid flowchart in the README and how the four key artifacts (n1904_knowledge_graph.json, n1904_elements.json, node_positions.json, n1904_graph_contextmenu.html) relate to each other.",
+      "parent": "Overview",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Phase 1 — Knowledge Graph Extraction",
+      "purpose": "Overview of the extraction phase: how create_knowledge_graph.ipynb reads the Text-Fabric N1904 corpus and produces the JSON knowledge graph. Links to child pages covering the notebook logic and the output data format.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "create_knowledge_graph.ipynb — Notebook Internals",
+      "purpose": "Deep dive into the extraction notebook: initialization via tf.app.use, the Doc4TF feature-analysis loop, the processFeature() and getFeatureDescription() helper functions, the featureDict staging structure, namespacing conventions (feature:: and otype:: prefixes), and the final json.dump serialization step.",
+      "parent": "Phase 1 — Knowledge Graph Extraction",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "n1904_knowledge_graph.json — Output Schema",
+      "purpose": "Documents the structure of the primary JSON output: the top-level 'nodes' and 'edges' keys, node categories (node_type, node_feature, edge_feature), edge 'valid_on' relationships, freqDetail metadata, and provenance fields. Explains how this file is used both for downstream visualization and as a Custom GPT grounding source.",
+      "parent": "Phase 1 — Knowledge Graph Extraction",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Phase 2 — Visualization Generation",
+      "purpose": "Overview of the visualization phase: how generate_cytoscape_html.ipynb consumes the JSON artifacts and produces the interactive HTML graph. Links to child pages covering the notebook logic, the node-positions file, and the final HTML output.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "generate_cytoscape_html.ipynb — Notebook Internals",
+      "purpose": "Deep dive into the visualization notebook: how it merges n1904_knowledge_graph.json with node_positions.json, translates the schema into Cytoscape-ready elements (nodes/edges with data and position attributes), the REPLACE_JSON_HERE template injection pattern, and the preset layout configuration.",
+      "parent": "Phase 2 — Visualization Generation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "n1904_graph_contextmenu.html — Interactive Visualization",
+      "purpose": "Documents the self-contained HTML output file: the embedded graph-data JSON block, Cytoscape.js initialization, color-coded node styling (node_type=blue, node_feature=green, edge_feature=yellow), the context-menu extension (info-node / info-edge commands), the tooltip engine, and the neighborhood-highlighting tap interaction.",
+      "parent": "Phase 2 — Visualization Generation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "N1904 Linguistic Data Model",
+      "purpose": "Overview of the Nestle 1904 Greek New Testament data model as represented in the knowledge graph. Explains the otype hierarchy and the feature taxonomy. Links to child pages for structural node types and linguistic features.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Node Type Hierarchy (otype)",
+      "purpose": "Describes each otype level in the N1904 corpus: book → chapter → verse → sentence → group → clause → wg (word group) → phrase → subphrase → word. Covers the parent/sibling edge features that establish the tree structure and the oslots edge feature that maps containers to word slots.",
+      "parent": "N1904 Linguistic Data Model",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Feature Taxonomy",
+      "purpose": "Catalogs all node features and edge features in the N1904 dataset grouped by category: morphological features (case, gender, number, person, tense, voice, mood, morph, sp), lexical features (lemma, gloss, strong, ln, trans), textual representation features (text, unicode, unaccent, translit, normalized), structural/syntactic features (rule, crule, clausetype, role, junction), relational edge features (parent, sibling, subjref, frame), and reference features (ref, nodeid, id, book, chapter, verse). Explains the valid_on constraint and freqDetail statistics.",
+      "parent": "N1904 Linguistic Data Model",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Documentation Site (GitHub Pages)",
+      "purpose": "Explains how the repository is published as a GitHub Pages site using Jekyll. Covers the _layouts/default.html template, the index.md entrypoint, the Mermaid.js diagram rendering pipeline, and the Liquid template patterns used to surface README content on the web.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "_layouts/default.html — Site Layout",
+      "purpose": "Details the Jekyll layout file: the Liquid template variables ({{ content }}, {{ page.title }}), the CSS constraints (960px max-width, system font stack), and the client-side Mermaid.js integration (DOMContentLoaded listener, renderMermaidBlocks function, mermaid.initialize with startOnLoad:false and securityLevel:loose, and mermaid.run).",
+      "parent": "Documentation Site (GitHub Pages)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "index.md — Documentation Entrypoint",
+      "purpose": "Explains the index.md file's role as the GitHub Pages landing page: its Jekyll front matter (layout: default, title: TF Knowledge Graph), the {% capture %} / {% include_relative %} pattern that ingests README.md, and the markdownify filter that renders it as HTML.",
+      "parent": "Documentation Site (GitHub Pages)",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Glossary",
+      "purpose": "Definitions of all codebase-specific terms, domain concepts, abbreviations, and jargon that an onboarding engineer needs to understand when working with this repository. Each entry includes code pointers.",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
