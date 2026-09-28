@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Text-Fabric Knowledge Graph</title>
+  <desc id="desc">Logo for the Text-Fabric Knowledge Graph project on https://github.com/tonyjurg/TF_Knowledge_Graph.</desc>
+  <!--
+  Text-Fabric Knowledge Graph logo
+  Author: Tony Jurg
+  Copyright © 2026 Tony Jurg
+  -->
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#10263B"/>
+      <stop offset="1" stop-color="#0B1728"/>
+    </linearGradient>
+    <linearGradient id="thread" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#EAF8F8"/>
+      <stop offset="1" stop-color="#83D8CF"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#80E4D1"/>
+      <stop offset="1" stop-color="#35BBAF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#background)"/>
+  <rect x="16" y="16" width="480" height="480" rx="98" fill="none" stroke="#B6E7E0" stroke-opacity=".12" stroke-width="2"/>
+
+  <!-- A quiet network behind the two letterforms -->
+  <g fill="none" stroke="#71C9C4" stroke-width="3" stroke-opacity=".23" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M59 165 91 86 197 64 256 111 349 71 447 143 407 225 453 338 372 422 262 445 154 420 62 345 100 265 59 165Z"/>
+    <path d="M91 86 100 265 197 64 262 445 349 71 372 422 447 143"/>
+    <path d="m59 165 197-54 151 114-307 40 353 73-299 82"/>
+  </g>
+  <g fill="#6BD0C7" fill-opacity=".58">
+    <circle cx="91" cy="86" r="5"/><circle cx="197" cy="64" r="5"/>
+    <circle cx="349" cy="71" r="5"/><circle cx="447" cy="143" r="5"/>
+    <circle cx="453" cy="338" r="5"/><circle cx="372" cy="422" r="5"/>
+    <circle cx="262" cy="445" r="5"/><circle cx="154" cy="420" r="5"/>
+    <circle cx="62" cy="345" r="5"/><circle cx="59" cy="165" r="5"/>
+  </g>
+
+  <!-- The nature of Text-Fabric: every junction is an addressable node, every stroke an edge -->
+  <g fill="none" stroke="url(#thread)" stroke-width="23" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M99 168h128M163 168v179"/>
+    <path d="M285 347V168h128M285 258h111"/>
+  </g>
+  <g fill="url(#node)" stroke="#0E2638" stroke-width="8">
+    <circle cx="99" cy="168" r="18"/><circle cx="163" cy="168" r="18"/>
+    <circle cx="227" cy="168" r="18"/><circle cx="163" cy="347" r="18"/>
+    <circle cx="285" cy="168" r="18"/><circle cx="413" cy="168" r="18"/>
+    <circle cx="285" cy="258" r="18"/><circle cx="396" cy="258" r="18"/>
+    <circle cx="285" cy="347" r="18"/>
+  </g>
+  <!-- Purpose: connecting it all -->
+  <path d="M163 347 226 391 285 347" fill="none" stroke="#E2AD67" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="226" cy="391" r="12" fill="#F0BC77" stroke="#0E2638" stroke-width="5"/>
+</svg>
