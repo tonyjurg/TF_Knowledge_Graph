@@ -1,5 +1,7 @@
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/tonyjurg/TF_Knowledge_Graph)
 
+<img src="/logo/tf-knowledge-graph-logo-small.png">
+
 # Generating Text-Fabric Knowledge Graphs
 
 This repository contains the following Jupyter Notebooks that can be used to create a JSON and/or an interactive visual representation of a Knowledge Graph representing a Text-Fabric dataset.
