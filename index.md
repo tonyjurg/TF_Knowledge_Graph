@@ -1,10 +1,5 @@
 ---
 layout: default
-title: TF Knowledge Graph
+title: Home
 ---
-
-{% capture readme_content %}
-{% include_relative README.md %}
-{% endcapture %}
-
-{{ readme_content | markdownify }}
+<h1>TF Knowledge Graph</h1><h2>What is TF Knowledge Graph?</h2><p>TF Knowledge Graph contains Jupyter Notebooks for creating a knowledge graph from a <a href="https://github.com/annotation/text-fabric">Text-Fabric</a> dataset. Export the graph as JSON or explore it in an interactive visualization.</p><p>The included example uses the <a href="https://centerblc.github.io/N1904/">Nestle 1904 Greek New Testament dataset (N1904-TF)</a>.</p><p>For more information, see <a href="about.html">About TF Knowledge Graph</a>.</p><h2>Explore the example</h2><p>Open the N1904 knowledge graph to explore its nodes and relationships.</p><p><a class="button" href="n1904_graph_contextmenu.html">Open interactive graph →</a></p><figure><a href="n1904_graph_contextmenu.html"><img src="visualized_knowledge_graph.png" alt="N1904 knowledge graph showing connected nodes and relationships"></a><figcaption>Select the image to open the interactive view.</figcaption></figure><h2>How to use TF Knowledge Graph</h2><p>Generate the JSON graph, then use the visualization notebook to create an interactive HTML graph.</p><p>See <a href="usage.html">Using TF Knowledge Graph</a> for the workflow and downloadable outputs.</p><h2>Licence</h2><p>The software is available under the MIT licence. See <a href="legal.html">Legal</a> for the terms of use.</p>
